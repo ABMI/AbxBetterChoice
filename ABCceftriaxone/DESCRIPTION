@@ -1,5 +1,5 @@
 Package: ABCceftriaxone
-Type: PLP Package
+Type: Package
 Title: A prediction model for ceftriaxone susceptibility
 Version: 0.0.9
 Author: Chungsoo Kim [aut, cre]
