@@ -16,3 +16,8 @@ Objective: To develop and validate the prediction model for better antibiotics c
 
 Instructions To Run Package
 ===================
+```r
+install.packages('devtools')
+devtools::install_github("ABMI/AbxBetterChoice/ABCceftriaxone")
+
+```
