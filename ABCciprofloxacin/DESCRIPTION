@@ -1,0 +1,43 @@
+Package: ABCciprofloxacin
+Type: Package
+Title: A prediction model for ciprofloxacin susceptibility
+Version: 0.0.9
+Author: Chungsoo Kim [aut, cre]
+Maintainer: Chungsoo Kim <ted9219@ajou.ac.kr>
+Description: A prediction model for ciprofloxacin susceptibility in UTI patients
+Depends:
+    DatabaseConnector
+Imports:
+    SqlRender,
+    Cyclops,
+    FeatureExtraction,
+    PatientLevelPrediction,
+    ggplot2,
+    Andromeda,
+    ff,
+    ffbase,
+    OhdsiSharing,
+    zip,
+	ParallelLogger,
+	magrittr,
+	dplyr,
+	officer,
+	gridExtra,
+	rvg,
+	jsonlite,
+	shiny,
+	shinycssloaders,
+  shinydashboard,
+  R.utils
+Suggests:
+    knitr,
+    rmarkdown,
+    DT,
+    reshape2,
+    tools,
+    plotly,
+    Hydra
+License: Apache License 2.0
+VignetteBuilder: knitr
+LazyData: TRUE
+RoxygenNote: 7.1.0
