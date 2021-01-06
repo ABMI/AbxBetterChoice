@@ -1,4 +1,4 @@
-A Package for Antibiotics Better Choice - ceftriaxone model
+A Package for Antibiotics for the Better Choice - ceftriaxone model
 ========================================================
 
 A skeleton package, to be used as a starting point when implementing patient-level prediction studies.
@@ -28,8 +28,9 @@ Instructions To Run Package
 ===================
 - Execute the study by running the code in (extras/CodeToRun.R) :
 ```r
-  library(ABCceftriaxone)
-  # USER INPUTS
+library(ABCceftriaxone)
+
+# USER INPUTS
 #=======================
 # The folder where the study intermediate and result files will be written:
 outputFolder <- "./Results"
@@ -65,7 +66,7 @@ cohortTable <- 'ABCceftriaxoneCohort'
 
 execute(connectionDetails = connectionDetails,
         cdmDatabaseSchema = cdmDatabaseSchema,
-		cdmDatabaseName = cdmDatabaseName,
+		    cdmDatabaseName = cdmDatabaseName,
         cohortDatabaseSchema = cohortDatabaseSchema,
         cohortTable = cohortTable,
         oracleTempSchema = oracleTempSchema,
@@ -158,8 +159,6 @@ Instructions To Share Package
   # install the network package
   devtools::install_github("OHDSI/StudyProtocolSandbox/ABCceftriaxone")
 ```
-
-
 
 # Development status
 Under development. Do not use
