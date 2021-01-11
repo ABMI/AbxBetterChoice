@@ -66,8 +66,8 @@ from
   FROM @cdm_database_schema.VISIT_OCCURRENCE vo
 JOIN #Codesets codesets on ((vo.visit_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
-
-
+JOIN @cdm_database_schema.PERSON P on C.person_id = P.person_id
+WHERE YEAR(C.visit_start_date) - P.year_of_birth >= 18
 -- End Visit Occurrence Criteria
 
 ) PE
@@ -88,8 +88,8 @@ from
   FROM @cdm_database_schema.VISIT_OCCURRENCE vo
 JOIN #Codesets codesets on ((vo.visit_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
-
-
+JOIN @cdm_database_schema.PERSON P on C.person_id = P.person_id
+WHERE YEAR(C.visit_start_date) - P.year_of_birth >= 18
 -- End Visit Occurrence Criteria
 ) Q
 JOIN @cdm_database_schema.OBSERVATION_PERIOD OP on Q.person_id = OP.person_id 
@@ -110,8 +110,8 @@ from
   FROM @cdm_database_schema.VISIT_OCCURRENCE vo
 JOIN #Codesets codesets on ((vo.visit_concept_id = codesets.concept_id and codesets.codeset_id = 3))
 ) C
-
-
+JOIN @cdm_database_schema.PERSON P on C.person_id = P.person_id
+WHERE YEAR(C.visit_start_date) - P.year_of_birth >= 18
 -- End Visit Occurrence Criteria
 ) Q
 JOIN @cdm_database_schema.OBSERVATION_PERIOD OP on Q.person_id = OP.person_id 
@@ -129,6 +129,7 @@ from
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
+WHERE value_as_concept_id != 0
 ) C
 
 
@@ -151,6 +152,7 @@ from
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
+WHERE value_as_concept_id != 0
 ) C
 
 
@@ -173,6 +175,7 @@ from
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
+WHERE value_as_concept_id != 0
 ) C
 
 
@@ -212,7 +215,7 @@ HAVING COUNT(A.TARGET_CONCEPT_ID) >= 1
 -- End Criteria Group
 ) AC on AC.person_id = pe.person_id and AC.event_id = pe.event_id
 
-) A on A.person_id = P.person_id  AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= DATEADD(day,0,P.START_DATE) AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= DATEADD(day,0,P.END_DATE)
+) A on A.person_id = P.person_id  AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= DATEADD(day,0,P.START_DATE) AND A.START_DATE <= DATEADD(day,0,P.START_DATE)
 GROUP BY p.person_id, p.event_id
 HAVING COUNT(A.TARGET_CONCEPT_ID) >= 1
 -- End Correlated Criteria
@@ -408,7 +411,6 @@ INSERT INTO @target_database_schema.@target_cohort_table (cohort_definition_id, 
 select @target_cohort_id as cohort_definition_id, person_id, start_date, end_date 
 FROM #final_cohort CO
 ;
-
 
 -- Find the event that is the 'best match' per person.  
 -- the 'best match' is defined as the event that satisfies the most inclusion rules.
