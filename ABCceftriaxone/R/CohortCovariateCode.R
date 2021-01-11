@@ -68,7 +68,7 @@ getCohortCovariateData <- function(connection,
                            countval = covariateSettings$count)
   sql <- SqlRender::translate(sql, targetDialect = attr(connection, "dbms"))
   # Retrieve the covariate:
-  covariates <- DatabaseConnector::querySql.ffdf(connection, sql)
+  covariates <- DatabaseConnector::querySql(connection, sql)
   # Convert colum names to camelCase:
   colnames(covariates) <- SqlRender::snakeCaseToCamelCase(colnames(covariates))
   # Construct covariate reference:
@@ -78,7 +78,7 @@ getCohortCovariateData <- function(connection,
                            concept_set=paste(covariateSettings$covariateName,' days before:', covariateSettings$startDay, 'days after:', covariateSettings$endDay))
   sql <- SqlRender::translate(sql, targetDialect = attr(connection, "dbms"))
   # Retrieve the covariateRef:
-  covariateRef  <- DatabaseConnector::querySql.ffdf(connection, sql)
+  covariateRef  <- DatabaseConnector::querySql(connection, sql)
   colnames(covariateRef) <- SqlRender::snakeCaseToCamelCase(colnames(covariateRef))
   
   analysisRef <- data.frame(analysisId = 456,

@@ -5,7 +5,7 @@ library(ABCceftriaxone)
 outputFolder <- "./Results"
 
 # Specify where the temporary files (used by the ff package) will be created:
-options(fftempdir = "location with space to save big data")
+options(andromedaTempFolder = "location with space to save big data")
 
 # Details for connecting to the server:
 dbms <- "you dbms"
@@ -57,7 +57,8 @@ ABCceftriaxone::runCohortDiagnostics(connectionDetails = connectionDetails,
                                      runCohortOverlap = TRUE,
                                      runCohortCharacterization = TRUE,
                                      runTemporalCohortCharacterization = TRUE,
-                                     minCellCount = 5)
+                                     minCellCount = 5,
+                                     cohortVariableSetting = "cohortCovariate")
 
 # To view the results:
 # Optional: if there are results zip files from multiple sites in a folder, this merges them, which will speed up starting the viewer:
@@ -94,7 +95,8 @@ execute(connectionDetails = connectionDetails,
         minCellCount= 5,
         createShiny = F,
         createJournalDocument = F,
-        analysisIdDocument = 1)
+        analysisIdDocument = 1,
+		    cohortVariableSetting = "cohortCovariate")
 
 # Uncomment and run the next line to see the shiny results:
 # PatientLevelPrediction::viewMultiplePlp(outputFolder)

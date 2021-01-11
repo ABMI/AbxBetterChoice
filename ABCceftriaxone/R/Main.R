@@ -150,7 +150,7 @@ execute <- function(connectionDetails,
     if(!is.null(cohortVariableSetting)){
       ParallelLogger::logInfo("Adding custom covariates to analysis settings")
       
-      pathToCustom <- system.file("settings", cohortVariableSetting, package = "ABCceftriaxone")
+      pathToCustom <- system.file("settings", paste0(cohortVariableSetting, ".csv"), package = "ABCceftriaxone")
       cohortVarsToCreate <- utils::read.csv(pathToCustom)
       cohortCov <- list()
       length(cohortCov) <- nrow(cohortVarsToCreate)+1
@@ -158,7 +158,8 @@ execute <- function(connectionDetails,
       
       for(i in 1:nrow(cohortVarsToCreate)){
         cohortCov[[1+i]] <- createCohortCovariateSettings(covariateName = as.character(cohortVarsToCreate$cohortName[i]),
-                                                          covariateId = cohortVarsToCreate$cohortId[i]*1000+456, count = F,
+                                                          covariateId = cohortVarsToCreate$cohortId[i]*1000+456, 
+                                                          count = F,
                                                           cohortDatabaseSchema = cohortDatabaseSchema,
                                                           cohortTable = cohortTable,
                                                           cohortId = cohortVarsToCreate$atlasId[i],

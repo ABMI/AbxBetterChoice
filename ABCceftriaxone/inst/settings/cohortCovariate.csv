@@ -1,0 +1,4 @@
+cohortId,atlasId,cohortName,startDay,endDay,count,ageInteraction
+3,1739,CKim_MDR_organisms_VRE_from_urine_culture,-180,-1,FALSE,FALSE
+4,1740,CKim_MDR_organisms_ESBL_from_urine_culture,-180,-1,FALSE,FALSE
+5,1741,CKim_MDR_organisms_MRSA_from_urine_culture,-180,-1,FALSE,FALSE
