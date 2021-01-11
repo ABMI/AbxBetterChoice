@@ -20,7 +20,9 @@
                            cohortDatabaseSchema,
                            cohortTable,
                            oracleTempSchema,
-                           outputFolder) {
+                           outputFolder,
+                           runInclusionStatistics = F,
+                           cohortVariableSetting = NULL) {
   
   # Create study cohort table structure:
   sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "CreateCohortTable.sql",
@@ -33,18 +35,19 @@
   
   
   # Insert rule names in cohort_inclusion table:
-  pathToCsv <- system.file("cohorts", "InclusionRules.csv", package = "ABCceftriaxone")
-  inclusionRules <- readr::read_csv(pathToCsv, col_types = readr::cols()) 
-  inclusionRules <- data.frame(cohort_definition_id = inclusionRules$cohortId,
-                               rule_sequence = inclusionRules$ruleSequence,
-                               name = inclusionRules$ruleName)
-  DatabaseConnector::insertTable(connection = connection,
-                                 tableName = "#cohort_inclusion",
-                                 data = inclusionRules,
-                                 dropTableIfExists = TRUE,
-                                 createTable = TRUE,
-                                 tempTable = TRUE,
-                                 oracleTempSchema = oracleTempSchema)
+    pathToCsv <- system.file("cohorts", "InclusionRules.csv", package = "ABCceftriaxone")
+    inclusionRules <- readr::read_csv(pathToCsv, col_types = readr::cols()) 
+    inclusionRules <- data.frame(cohort_definition_id = inclusionRules$cohortId,
+                                 rule_sequence = inclusionRules$ruleSequence,
+                                 name = inclusionRules$ruleName)
+    DatabaseConnector::insertTable(connection = connection,
+                                   tableName = "#cohort_inclusion",
+                                   data = inclusionRules,
+                                   dropTableIfExists = TRUE,
+                                   createTable = TRUE,
+                                   tempTable = TRUE,
+                                   oracleTempSchema = oracleTempSchema)
+ 
   
   
   # Instantiate cohorts:
@@ -58,12 +61,10 @@
                                              oracleTempSchema = oracleTempSchema,
                                              cdm_database_schema = cdmDatabaseSchema,
                                              vocabulary_database_schema = vocabularyDatabaseSchema,
-                                             
                                              results_database_schema.cohort_inclusion = "#cohort_inclusion",  
                                              results_database_schema.cohort_inclusion_result = "#cohort_inc_result",  
                                              results_database_schema.cohort_inclusion_stats = "#cohort_inc_stats",  
                                              results_database_schema.cohort_summary_stats = "#cohort_summary_stats",  
-                                             
                                              target_database_schema = cohortDatabaseSchema,
                                              target_cohort_table = cohortTable,
                                              target_cohort_id = cohortsToCreate$cohortId[i])
@@ -106,6 +107,37 @@
   fetchStats("cohort_inc_result")
   fetchStats("cohort_inc_stats")
   fetchStats("cohort_summary_stats")
+  
+  
+  if(!is.null(cohortVariableSetting)){
+    # if custom cohort covaraites set:
+    pathToCustom <- system.file("settings", paste0(cohortVariableSetting, ".csv"), package = "ABCceftriaxone")
+    if(!file.exists(pathToCustom)){
+      stop('cohortVariableSetting does not exist in package')
+    }
+    cohortVarsToCreate <- utils::read.csv(pathToCustom)
+    
+    if(sum(colnames(cohortVarsToCreate)%in%c('atlasId', 'cohortName', 'startDay', 'endDay'))!=4){
+      stop('Issue with cohortVariableSetting - make sure it is NULL or a setting')  
+    }
+    
+    cohortVarsToCreate <- unique(cohortVarsToCreate[,c('atlasId', 'cohortName')])
+    for (i in 1:nrow(cohortVarsToCreate)) {
+      writeLines(paste("Creating cohort:", cohortVarsToCreate$cohortName[i]))
+      sql <- SqlRender::loadRenderTranslateSql(sqlFilename = paste0(cohortVarsToCreate$cohortName[i], ".sql"),
+                                               packageName = "ABCceftriaxone",
+                                               dbms = attr(connection, "dbms"),
+                                               oracleTempSchema = oracleTempSchema,
+                                               cdm_database_schema = cdmDatabaseSchema,
+                                               vocabulary_database_schema = vocabularyDatabaseSchema,
+                                               target_database_schema = cohortDatabaseSchema,
+                                               target_cohort_table = cohortTable,
+                                               target_cohort_id = cohortVarsToCreate$atlasId[i])
+      DatabaseConnector::executeSql(connection, sql)
+    }
+    
+    
+  }
   
 }
 

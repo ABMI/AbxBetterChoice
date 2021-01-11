@@ -10,7 +10,8 @@ createCohorts(
   cohortDatabaseSchema,
   cohortTable = "cohort",
   oracleTempSchema,
-  outputFolder
+  outputFolder,
+  cohortVariableSetting = NULL
 )
 }
 \arguments{
@@ -33,7 +34,9 @@ study.}
 \item{oracleTempSchema}{Should be used in Oracle to specify a schema where the user has write
 priviliges for storing temporary tables.}
 
-\item{outputFolder}{Name of local folder to place results; make sure to use forward slashes
+\item{outputFolder}{Name of local folder to place results; make sure to use forward slashes}
+
+\item{cohortVariableSetting}{the name of the custom cohort covariate settings to use
 (/)}
 }
 \description{

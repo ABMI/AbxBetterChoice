@@ -53,6 +53,7 @@
 #' @param runTemporalCohortCharacterization Generate and export the temporal cohort characterization? 
 #' @param minCellCount         The minimum number of subjects contributing to a count before it can be included 
 #'                             in packaged results.
+#' @param cohortVariableSetting the name of the custom cohort covariate settings to use
 #'
 #' @export
 runCohortDiagnostics <- function(connectionDetails,
@@ -74,7 +75,8 @@ runCohortDiagnostics <- function(connectionDetails,
                                  runCohortOverlap = TRUE,
                                  runCohortCharacterization = TRUE,
                                  runTemporalCohortCharacterization = TRUE,
-                                 minCellCount = 5) {
+                                 minCellCount = 5,
+                                 cohortVariableSetting = NULL) {
   if (!file.exists(outputFolder))
     dir.create(outputFolder, recursive = TRUE)
 
@@ -91,7 +93,9 @@ runCohortDiagnostics <- function(connectionDetails,
                    cohortDatabaseSchema = cohortDatabaseSchema,
                    cohortTable = cohortTable,
                    oracleTempSchema = oracleTempSchema,
-                   outputFolder = outputFolder)
+                   outputFolder = outputFolder,
+                   runInclusionStatistics = runInclusionStatistics,
+                   cohortVariableSetting = cohortVariableSetting)
     DatabaseConnector::disconnect(connection)
   }
   

@@ -24,7 +24,8 @@ runCohortDiagnostics(
   runCohortOverlap = TRUE,
   runCohortCharacterization = TRUE,
   runTemporalCohortCharacterization = TRUE,
-  minCellCount = 5
+  minCellCount = 5,
+  cohortVariableSetting = "cohortCovariate"
 )
 }
 \arguments{
@@ -81,6 +82,8 @@ Synthetic Public Use Files (SynPUFs)').}
 
 \item{minCellCount}{The minimum number of subjects contributing to a count before it can be included 
 in packaged results.}
+
+\item{cohortVariableSetting}{the name of the custom cohort covariate settings to use}
 }
 \description{
 Execute the cohort diagnostics

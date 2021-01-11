@@ -1,0 +1,3 @@
+cohortName,ruleSequence,ruleName,cohortId
+CKIM_UTI_patients_with_Ceftriaxone_susceptibility_test,0,Urinary tract infection diagnosis,1671
+CKIM_UTI_patients_with_Ceftriaxone_susceptibility_test,1,Ceftriaxone susceptibility test,1671
