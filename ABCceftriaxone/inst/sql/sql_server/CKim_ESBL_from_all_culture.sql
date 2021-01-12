@@ -108,7 +108,7 @@ JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and 
 WHERE measurement_id in (select distinct fact_id_2 from @cdm_database_schema.fact_relationship 
 where fact_id_1 in (select distinct m1.measurement_id from @cdm_database_schema.measurement m1 
 join #Codesets codesets on ((m1.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0)) 
-WHERE C.value_as_concept_id != 0
+WHERE m1.value_as_concept_id != 0
 ) and value_as_concept_id = 4148441)
 --- end 
 ) C
