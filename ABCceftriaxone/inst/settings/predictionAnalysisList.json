@@ -23,7 +23,7 @@
   "targetIds": [1671],
   "runPlpArgs": {
     "nfold": 3,
-    "minCovariateFraction": 0.05,
+    "minCovariateFraction": 0.001,
     "splitSeed": null,
     "testSplit": "person",
     "testFraction": 0.25,

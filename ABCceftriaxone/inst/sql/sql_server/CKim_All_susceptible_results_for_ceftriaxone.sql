@@ -35,7 +35,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
         JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
         WHERE measurement_id in (select distinct fact_id_2 from @cdm_database_schema.fact_relationship where domain_concept_id_1 in (3026008))
         and value_source_value = 'S' 
-        and person_id not in (select distinct person_id from @cdm_database_schema.measurement 
+        and measurement_id not in (select distinct measurement_id from @cdm_database_schema.measurement 
           where measurement_concept_id in (3034442, 3022747) 
           and measurement_id in (select distinct fact_id_2 from CDMPv532.dbo.fact_relationship where domain_concept_id_1 in (3026008))
           and value_source_value in ('I', 'R')
