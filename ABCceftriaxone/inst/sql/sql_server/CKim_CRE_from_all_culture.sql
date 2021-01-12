@@ -48,7 +48,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
           select m.* 
             FROM @cdm_database_schema.MEASUREMENT m
           JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
-          JOIN #Codesets2 codesets on ((m.value_as_concept_id = codesets2.concept_id and codesets2.codeset_id = 2))
+          JOIN #Codesets codesets2 on ((m.value_as_concept_id = codesets2.concept_id and codesets2.codeset_id = 2))
         ) C
         
         -- End Measurement Criteria
@@ -70,7 +70,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
                         select m.* 
                           FROM @cdm_database_schema.MEASUREMENT m
                         JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
-                        JOIN #Codesets2 codesets on ((m.value_as_concept_id = codesets2.concept_id and codesets2.codeset_id = 2))
+                        JOIN #Codesets codesets2 on ((m.value_as_concept_id = codesets2.concept_id and codesets2.codeset_id = 2))
                       ) C
 
                       -- End Measurement Criteria
@@ -92,7 +92,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
                           select m.* 
                             FROM @cdm_database_schema.MEASUREMENT m
                           JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
-                          JOIN #Codesets2 codesets on ((m.value_as_concept_id = codesets2.concept_id and codesets2.codeset_id = 2))
+                          JOIN #Codesets codesets2 on ((m.value_as_concept_id = codesets2.concept_id and codesets2.codeset_id = 2))
                         ) C
 
                         -- End Measurement Criteria
@@ -115,7 +115,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
                 WHERE measurement_id in (select distinct fact_id_2 from @cdm_database_schema.fact_relationship 
                                          where fact_id_1 in (select distinct m1.measurement_id from @cdm_database_schema.measurement m1 
                                                              join #Codesets codesets on ((m1.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0)) 
-                                                             JOIN #Codesets2 codesets on ((m1.value_as_concept_id = codesets2.concept_id and codesets2.codeset_id = 2))
+                                                             JOIN #Codesets codesets2 on ((m1.value_as_concept_id = codesets2.concept_id and codesets2.codeset_id = 2))
                                          ) and value_as_concept_id = 4148441)
                 --- end 
               ) C
