@@ -1,9 +1,9 @@
 cohortId,atlasId,cohortName,startDay,endDay,count,ageInteraction
-3,1781,CKim_VRE_from_all_culture,-180,-1,FALSE,FALSE
-4,1782,CKim_MRSA_from_all_culture,-180,-1,FALSE,FALSE
-5,1783,CKim_CRE_from_all_culture,-180,-1,FALSE,FALSE
-6,1784,CKim_ESBL_from_all_culture,-180,-1,FALSE,FALSE
-7,1781,CKim_VRE_from_all_culture,-365,-181,FALSE,FALSE
-8,1782,CKim_MRSA_from_all_culture,-365,-181,FALSE,FALSE
-9,1783,CKim_CRE_from_all_culture,-365,-181,FALSE,FALSE
-10,1784,CKim_ESBL_from_all_culture,-365,-181,FALSE,FALSE
+1781,1781,CKim_VRE_from_all_culture,-180,-1,FALSE,FALSE
+1782,1782,CKim_MRSA_from_all_culture,-180,-1,FALSE,FALSE
+1783,1783,CKim_CRE_from_all_culture,-180,-1,FALSE,FALSE
+1784,1784,CKim_ESBL_from_all_culture,-180,-1,FALSE,FALSE
+1781,1781,CKim_VRE_from_all_culture,-365,-181,FALSE,FALSE
+1782,1782,CKim_MRSA_from_all_culture,-365,-181,FALSE,FALSE
+1783,1783,CKim_CRE_from_all_culture,-365,-181,FALSE,FALSE
+1784,1784,CKim_ESBL_from_all_culture,-365,-181,FALSE,FALSE
