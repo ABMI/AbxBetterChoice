@@ -119,6 +119,5 @@ runCohortDiagnostics <- function(connectionDetails,
                                           runIncidenceRate = runIncidenceRates,
                                           runCohortOverlap = runCohortOverlap,
                                           runCohortCharacterization = runCohortCharacterization,
-                                          runTemporalCohortCharacterization = runTemporalCohortCharacterization,
                                           minCellCount = minCellCount)
 }
