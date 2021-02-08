@@ -148,7 +148,7 @@ from
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
 ) C
-WHERE C.value_as_concept_id in (9191,4128650,4123508,4126673,4125547,4126674)
+WHERE C.value_as_concept_id in (4034133, 4263064, 4101235, 4302157, 4338685, 4180694, 4149104, 4011481, 4234555)
 
 
 -- End Measurement Criteria

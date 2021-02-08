@@ -105,7 +105,7 @@ from
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
 ) C
-where C.value_source_value in ('I', 'R')
+where C.value_source_value in ('I', 'R', 'P', '+')
 
 -- End Measurement Criteria
 

@@ -25,7 +25,7 @@ runCohortDiagnostics(
   runCohortCharacterization = TRUE,
   runTemporalCohortCharacterization = TRUE,
   minCellCount = 5,
-  cohortVariableSetting = "cohortCovariate"
+  cohortVariableSetting = NULL
 )
 }
 \arguments{

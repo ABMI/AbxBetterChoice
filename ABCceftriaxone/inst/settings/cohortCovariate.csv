@@ -7,3 +7,4 @@ cohortId,atlasId,cohortName,startDay,endDay,count,ageInteraction
 1782,1782,CKim_MRSA_from_all_culture,-365,-181,FALSE,FALSE
 1783,1783,CKim_CRE_from_all_culture,-365,-181,FALSE,FALSE
 1784,1784,CKim_ESBL_from_all_culture,-365,-181,FALSE,FALSE
+1816,1816,CKim_Antibiotics_IV_use_prior_index_date,-90,-1,FALSE,FALSE

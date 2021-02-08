@@ -62,7 +62,7 @@ ABCceftriaxone::runCohortDiagnostics(connectionDetails = connectionDetails,
 
 # To view the results:
 # Optional: if there are results zip files from multiple sites in a folder, this merges them, which will speed up starting the viewer:
-CohortDiagnostics::preMergeDiagnosticsFiles(file.path(outputFolder, "diagnosticsExport"))
+# CohortDiagnostics::preMergeDiagnosticsFiles(file.path(outputFolder, "diagnosticsExport"))
 
 # Use this to view the results. Multiple zip files can be in the same folder. If the files were pre-merged, this is automatically detected: 
 CohortDiagnostics::launchDiagnosticsExplorer(file.path(outputFolder, "diagnosticsExport"))

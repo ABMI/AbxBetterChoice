@@ -215,7 +215,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
                 -- End Criteria Group
               ) AC on AC.person_id = pe.person_id and AC.event_id = pe.event_id
               
-            ) A on A.person_id = P.person_id  AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= DATEADD(day,0,P.START_DATE) AND A.START_DATE <= DATEADD(day,0,P.START_DATE)
+            ) A on A.person_id = P.person_id  AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= P.OP_END_DATE AND A.START_DATE >= DATEADD(day,0,P.START_DATE) AND A.START_DATE <= DATEADD(day,3,P.START_DATE) AND A.START_DATE >= P.OP_START_DATE AND A.START_DATE <= DATEADD(day,0,P.END_DATE)
             GROUP BY p.person_id, p.event_id
             HAVING COUNT(A.TARGET_CONCEPT_ID) >= 1
             -- End Correlated Criteria

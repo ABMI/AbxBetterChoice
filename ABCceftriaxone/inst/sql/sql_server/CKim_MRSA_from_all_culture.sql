@@ -43,7 +43,7 @@ from
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
-WHERE C.value_as_concept_id in (36308185)
+WHERE C.value_as_concept_id in (4149419)
 -- End Measurement Criteria
 
 ) PE
@@ -65,7 +65,7 @@ from
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
-WHERE C.value_as_concept_id in (36308185)
+WHERE C.value_as_concept_id in (4149419)
 -- End Measurement Criteria
 ) Q
 JOIN @cdm_database_schema.OBSERVATION_PERIOD OP on Q.person_id = OP.person_id 
@@ -87,7 +87,7 @@ from
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
-WHERE C.value_as_concept_id in (36308185)
+WHERE C.value_as_concept_id in (4149419)
 -- End Measurement Criteria
 ) Q
 JOIN @cdm_database_schema.OBSERVATION_PERIOD OP on Q.person_id = OP.person_id 
@@ -113,7 +113,7 @@ JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and 
     select distinct ms.measurement_id 
     FROM @cdm_database_schema.MEASUREMENT ms
     JOIN #Codesets codesets on ((ms.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
-    WHERE ms.value_as_concept_id in (36308185)
+    WHERE ms.value_as_concept_id in (4149419)
     )) and  C.value_source_value in ('I', 'R')
 --- end 
 
