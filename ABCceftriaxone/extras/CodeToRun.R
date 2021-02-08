@@ -2,7 +2,7 @@ library(ABCceftriaxone)
 # USER INPUTS
 #=======================
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "./Results"
+outputFolder <- "./ABCceftriaxoneResults"
 
 # Specify where the temporary files (used by the ff package) will be created:
 options(andromedaTempFolder = "location with space to save big data")
@@ -32,8 +32,8 @@ oracleTempSchema <- NULL
 # table name where the cohorts will be generated
 cohortTable <- 'ABCceftriaxoneCohort'
 #=======================
-databaseId <- "CCAE"
-databaseName <- "IBM MarketScan Commercial Claims and Encounters Database"
+databaseId <- cdmDatabaseName
+databaseName <- cdmDatabaseName
 databaseDescription <- "IBM MarketScan® Commercial Claims and Encounters Database (CCAE) represent data from individuals enrolled in United States employer-sponsored insurance health plans. The data includes adjudicated health insurance claims (e.g. inpatient, outpatient, and outpatient pharmacy) as well as enrollment data from large employers and health plans who provide private healthcare coverage to employees, their spouses, and dependents. Additionally, it captures laboratory tests for a subset of the covered lives. This administrative claims database includes a variety of fee-for-service, preferred provider organizations, and capitated health plans." 
 
 
