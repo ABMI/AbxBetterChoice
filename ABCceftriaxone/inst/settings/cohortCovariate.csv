@@ -11,8 +11,8 @@ cohortId,atlasId,cohortName,startDay,endDay,count,ageInteraction
 1816,1816,CKim_Antibiotics_IV_use,-90,-1,FALSE,FALSE
 1818,1818,CKim_Antibiotics_PO_use,-90,-1,FALSE,FALSE
 1819,1819,CKim_Aminoglycoside_use,-90,-1,FALSE,FALSE
-1820,1820,CKim_Anti-pseudomonal_penicillin_and_cephalosporine_use,-90,-1,FALSE,FALSE
-1823,1823,CKim_third_gen_Cephalosporine_use,-90,-1,FALSE,FALSE
+1820,1820,CKim_Anti-pseudomonal_penicillin_and_cephalosporin_use,-90,-1,FALSE,FALSE
+1823,1823,CKim_third_gen_Cephalosporin_use,-90,-1,FALSE,FALSE
 1825,1825,CKim_Carbapenem_use,-90,-1,FALSE,FALSE
 1826,1826,CKim_Glycopeptide_use,-90,-1,FALSE,FALSE
 1827,1827,CKim_Macrolide_use,-90,-1,FALSE,FALSE
