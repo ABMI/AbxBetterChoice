@@ -14,11 +14,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3010007,
+          "CONCEPT_ID": 3034442,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "185-9",
+          "CONCEPT_CODE": "141-2",
           "VOCABULARY_ID": "LOINC",
-          "CONCEPT_NAME": "Ciprofloxacin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+          "CONCEPT_NAME": "cefTRIAXone [Susceptibility] by Minimum inhibitory concentration (MIC)",
           "DOMAIN_ID": "Measurement",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Lab Test",
@@ -31,11 +31,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3020153,
+          "CONCEPT_ID": 3022747,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "186-7",
+          "CONCEPT_CODE": "142-0",
           "VOCABULARY_ID": "LOINC",
-          "CONCEPT_NAME": "Ciprofloxacin [Susceptibility] by Disk diffusion (KB)",
+          "CONCEPT_NAME": "cefTRIAXone [Susceptibility] by Disk diffusion (KB)",
           "DOMAIN_ID": "Measurement",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Lab Test",
@@ -45,7 +45,7 @@
         "includeDescendants": false
       }
     ]},
-    "name": "Ciprofloxacin susceptibility test",
+    "name": "ceftriaxone susceptibility test",
     "id": 0
   }],
   "EndStrategy": {"DateOffset": {

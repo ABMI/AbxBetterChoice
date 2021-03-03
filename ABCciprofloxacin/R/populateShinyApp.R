@@ -29,6 +29,10 @@ populateShinyApp <- function(outputDirectory = './ShinyApp',
   outputDirectory <- file.path(outputDirectory,'data')
   #outputDirectory <- file.path(shinyDirectory,'data')
   
+  if(!dir.exists(outputDirectory)){
+    dir.create(outputDirectory, recursive = T)
+  }
+  
   # copy the settings csv
   file <- utils::read.csv(file.path(resultDirectory,'settings.csv'))
   utils::write.csv(file, file.path(outputDirectory,'settings.csv'), row.names = F)

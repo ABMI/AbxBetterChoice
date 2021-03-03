@@ -144,6 +144,32 @@ execute <- function(connectionDetails,
     predictionAnalysisList$outputFolder = outputFolder
     predictionAnalysisList$verbosity = verbosity
     
+    if(!is.null(cohortVariableSetting)){
+      ParallelLogger::logInfo("Adding custom covariates to analysis settings")
+      
+      pathToCustom <- system.file("settings", paste0(cohortVariableSetting, ".csv"), package = "ABCciprofloxacin")
+      cohortVarsToCreate <- utils::read.csv(pathToCustom)
+      cohortCov <- list()
+      length(cohortCov) <- nrow(cohortVarsToCreate)+1
+      cohortCov[[1]] <- FeatureExtraction::createCovariateSettings(useDemographicsAgeGroup = T)
+      
+      for(i in 1:nrow(cohortVarsToCreate)){
+        cohortCov[[1+i]] <- createCohortCovariateSettings(covariateName = as.character(cohortVarsToCreate$cohortName[i]),
+                                                          covariateId = cohortVarsToCreate$cohortId[i]*1000+456, 
+                                                          count = F,
+                                                          cohortDatabaseSchema = cohortDatabaseSchema,
+                                                          cohortTable = cohortTable,
+                                                          cohortId = cohortVarsToCreate$atlasId[i],
+                                                          startDay=cohortVarsToCreate$startDay[i], 
+                                                          endDay=cohortVarsToCreate$endDay[i])
+      }
+      
+      for(i in 1:length(predictionAnalysisList$modelAnalysisList$covariateSettings)){
+        cohortCov[[1]] <- predictionAnalysisList$modelAnalysisList$covariateSettings[[i]]
+        predictionAnalysisList$modelAnalysisList$covariateSettings[[i]] <- cohortCov
+      }
+    }
+    
     result <- do.call(PatientLevelPrediction::runPlpAnalyses, predictionAnalysisList)
   }
   
