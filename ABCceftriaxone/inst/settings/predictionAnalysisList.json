@@ -1480,31 +1480,7 @@
       "seed": null,
       "mtries": [-1],
       "ntrees": [500]
-    }},
-    {"GradientBoostingMachineSettings": {
-      "maxDepth": [
-        4,
-        6,
-        17
-      ],
-      "minRows": [20],
-      "seed": null,
-      "nthread": 20,
-      "ntrees": [
-        10,
-        100
-      ],
-      "learnRate": [
-        0.01,
-        0.1
-      ]
-    }},
-    {"AdaBoostSettings": {
-      "nEstimators": [50],
-      "seed": null,
-      "learningRate": [1]
-    }},
-    {"NaiveBayesSettings": {}}
+    }}
   ],
   "name": "[CKim] ABC_ceftriaxone",
   "modifiedDate": null,
