@@ -16,7 +16,9 @@ populateShinyApp <- function(outputDirectory = './ShinyApp',
     stop('resultDirectory does not exist')
   }
   
+  
   # create the shiny data folder
+  
   if(!dir.exists(outputDirectory)){
     dir.create(outputDirectory, recursive = T)
   }
@@ -25,8 +27,12 @@ populateShinyApp <- function(outputDirectory = './ShinyApp',
   R.utils::copyDirectory(from = shinyDirectory, 
                        to= outputDirectory,
                        recursive=TRUE)
-  
   outputDirectory <- file.path(outputDirectory,'data')
+  
+  if(!dir.exists(outputDirectory)){
+    dir.create(outputDirectory, recursive = T)
+  }
+  
   #outputDirectory <- file.path(shinyDirectory,'data')
   
   # copy the settings csv
