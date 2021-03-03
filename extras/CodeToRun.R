@@ -73,11 +73,26 @@ CohortDiagnostics::preMergeDiagnosticsFiles(file.path(outputFolder, "diagnostics
 # Use this to view the results. Multiple zip files can be in the same folder. If the files were pre-merged, this is automatically detected: 
 CohortDiagnostics::launchDiagnosticsExplorer(file.path(outputFolder, "diagnosticsExport"))
 
+execute(connectionDetails = connectionDetails,
+        cdmDatabaseSchema = cdmDatabaseSchema,
+        cdmDatabaseName = cdmDatabaseName,
+        cohortDatabaseSchema = cohortDatabaseSchema,
+        oracleTempSchema = oracleTempSchema,
+        cohortTable = cohortTable,
+        outputFolder = outputFolder,
+        createProtocol = F,
+        createCohorts = F,
+        runAnalyses = F,
+        createResultsDoc = F,
+        packageResults = F,
+        createValidationPackage = F,  
+        #analysesToValidate = 1,
+        minCellCount= 5,
+        createShiny = F,
+        createJournalDocument = F,
+        analysisIdDocument = 1,
+        cohortVariableSetting = "cohortCovariate")
 
-# To explore a specific cohort in the local database, viewing patient profiles:
-CohortDiagnostics::launchCohortExplorer(connectionDetails = connectionDetails,
-                                        cdmDatabaseSchema = cdmDatabaseSchema,
-                                        cohortDatabaseSchema = cohortDatabaseSchema,
-                                        cohortTable = cohortTable,
-                                        cohortId = 123)
-# Where 123 is the ID of the cohort you wish to inspect.
+# Uncomment and run the next line to see the shiny results:
+# PatientLevelPrediction::viewMultiplePlp(outputFolder)
+
