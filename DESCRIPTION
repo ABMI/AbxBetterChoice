@@ -11,3 +11,4 @@ Description: Development and validation of prediction model for antibiotics susc
 License: ABMI
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.0.2
