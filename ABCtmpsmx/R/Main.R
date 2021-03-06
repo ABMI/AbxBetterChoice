@@ -106,7 +106,8 @@ execute <- function(connectionDetails,
                     createJournalDocument = F,
                     analysisIdDocument = 1,
                     verbosity = "INFO",
-                    cdmVersion = 5) {
+                    cdmVersion = 5,
+                    cohortVariableSetting = NULL) {
   if (!file.exists(outputFolder))
     dir.create(outputFolder, recursive = TRUE)
   
@@ -118,7 +119,7 @@ execute <- function(connectionDetails,
   
   if (createCohorts) {
     ParallelLogger::logInfo("Creating cohorts")
-    createCohorts(connectionDetails = connectionDetails,
+    ABCtmpsmx::createCohorts(connectionDetails = connectionDetails,
                   cdmDatabaseSchema = cdmDatabaseSchema,
                   cohortDatabaseSchema = cohortDatabaseSchema,
                   cohortTable = cohortTable,
@@ -207,7 +208,7 @@ execute <- function(connectionDetails,
   }
   
   if (createShiny) {
-    populateShinyApp(outputDirectory = file.path(outputFolder, 'ShinyApp'),
+    ABCtmpsmx::populateShinyApp(outputDirectory = file.path(outputFolder, 'ShinyApp'),
                      resultDirectory = outputFolder,
                      minCellCount = minCellCount,
                      databaseName = cdmDatabaseName)

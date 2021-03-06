@@ -120,7 +120,7 @@ execute <- function(connectionDetails,
   
   if (createCohorts) {
     ParallelLogger::logInfo("Creating cohorts")
-    createCohorts(connectionDetails = connectionDetails,
+    ABCceftriaxone::createCohorts(connectionDetails = connectionDetails,
                   cdmDatabaseSchema = cdmDatabaseSchema,
                   cohortDatabaseSchema = cohortDatabaseSchema,
                   cohortTable = cohortTable,
@@ -211,7 +211,7 @@ execute <- function(connectionDetails,
   }
   
   if (createShiny) {
-    populateShinyApp(outputDirectory = file.path(outputFolder, 'ShinyApp'),
+    ABCceftriaxone::populateShinyApp(outputDirectory = file.path(outputFolder, 'ShinyApp'),
                      resultDirectory = outputFolder,
                      minCellCount = minCellCount,
                      databaseName = cdmDatabaseName)

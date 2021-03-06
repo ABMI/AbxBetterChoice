@@ -54,7 +54,8 @@ createCohorts <- function(connectionDetails,
                  cohortDatabaseSchema = cohortDatabaseSchema,
                  cohortTable = cohortTable,
                  oracleTempSchema = oracleTempSchema,
-                 outputFolder = outputFolder)
+                 outputFolder = outputFolder,
+                 cohortVariableSetting = cohortVariableSetting)
   
   # Check number of subjects per cohort:
   ParallelLogger::logInfo("Counting cohorts")

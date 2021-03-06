@@ -4,6 +4,3 @@
 \name{ABCceftriaxone}
 \alias{ABCceftriaxone}
 \title{ABCceftriaxone}
-\description{
-ABCceftriaxone
-}

@@ -13,6 +13,12 @@
 # devtools::install_github("CohortDiagnostics")
 
 
+# Build the package including sub-model package
+devtools::install(file.path(getwd(), "ABCceftriaxone"))
+devtools::install(file.path(getwd(), "ABCciprofloxacin"))
+devtools::install(file.path(getwd(), "ABCtmpsmx"))
+devtools::install(getwd())
+
 # Load the package
 library(AbxBetterChoice)
 
@@ -73,6 +79,8 @@ CohortDiagnostics::preMergeDiagnosticsFiles(file.path(outputFolder, "diagnostics
 # Use this to view the results. Multiple zip files can be in the same folder. If the files were pre-merged, this is automatically detected: 
 CohortDiagnostics::launchDiagnosticsExplorer(file.path(outputFolder, "diagnosticsExport"))
 
+
+# To execute all sub-model development codes.
 execute(connectionDetails = connectionDetails,
         cdmDatabaseSchema = cdmDatabaseSchema,
         cdmDatabaseName = cdmDatabaseName,
@@ -80,16 +88,8 @@ execute(connectionDetails = connectionDetails,
         oracleTempSchema = oracleTempSchema,
         cohortTable = cohortTable,
         outputFolder = outputFolder,
-        createProtocol = F,
-        createCohorts = F,
         runAnalyses = F,
-        createResultsDoc = F,
-        packageResults = F,
-        createValidationPackage = F,  
-        #analysesToValidate = 1,
         minCellCount= 5,
-        createShiny = F,
-        createJournalDocument = F,
         analysisIdDocument = 1,
         cohortVariableSetting = "cohortCovariate")
 

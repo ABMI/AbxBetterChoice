@@ -39,7 +39,7 @@
 #'                             performance.
 #' @param createProtocol       Creates a protocol based on the analyses specification                             
 #' @param createCohorts        Create the cohortTable table with the target population and outcome cohorts?
-#' @param runAnalyses          Run the model development
+#' @param runAllAnalyses       Run the model development
 #' @param createResultsDoc     Create a document containing the results of each prediction
 #' @param createValidationPackage  Create a package for sharing the models 
 #' @param analysesToValidate   A vector of analysis ids (e.g., c(1,3,10)) specifying which analysese to export into validation package. Default is NULL and all are exported.
@@ -68,24 +68,6 @@
 #'                                              password = "secret",
 #'                                              server = "myserver")
 #'
-#' execute(connectionDetails,
-#'         cdmDatabaseSchema = "cdm_data",
-#'         cdmDatabaseName = 'shareable name of the database'
-#'         cohortDatabaseSchema = "study_results",
-#'         cohortTable = "cohort",
-#'         oracleTempSchema = NULL,
-#'         outputFolder = "c:/temp/study_results", 
-#'         createProtocol = T,
-#'         createCohorts = T,
-#'         runAnalyses = T,
-#'         createResultsDoc = T,
-#'         createValidationPackage = T,
-#'         packageResults = F,
-#'         minCellCount = 5,
-#'         createShiny = F,
-#'         verbosity = "INFO",
-#'         cdmVersion = 5)
-#' }
 #'
 #' @export
 execute <- function(connectionDetails,
@@ -95,144 +77,92 @@ execute <- function(connectionDetails,
                     cohortTable = "cohort",
                     oracleTempSchema = cohortDatabaseSchema,
                     outputFolder,
-                    createProtocol = F,
-                    createCohorts = F,
-                    runAnalyses = F,
-                    createResultsDoc = F,
-                    createValidationPackage = F,
+                    runAllAnalyses = F,
                     analysesToValidate = NULL,
-                    packageResults = F,
                     minCellCount= 5,
-                    createShiny = F,
-                    createJournalDocument = F,
                     analysisIdDocument = 1,
                     verbosity = "INFO",
                     cdmVersion = 5,
                     cohortVariableSetting = NULL) {
+  
   if (!file.exists(outputFolder))
     dir.create(outputFolder, recursive = TRUE)
   
   ParallelLogger::addDefaultFileLogger(file.path(outputFolder, "log.txt"))
   
-  if(createProtocol){
-    createPlpProtocol(outputFolder)
-  }
-  
-  if (createCohorts) {
-    ParallelLogger::logInfo("Creating cohorts")
-    createCohorts(connectionDetails = connectionDetails,
-                  cdmDatabaseSchema = cdmDatabaseSchema,
-                  cohortDatabaseSchema = cohortDatabaseSchema,
-                  cohortTable = cohortTable,
-                  oracleTempSchema = oracleTempSchema,
-                  outputFolder = outputFolder,
-                  cohortVariableSetting = cohortVariableSetting)
-  }
-  
-  if(runAnalyses){
-    ParallelLogger::logInfo("Running predictions")
-    predictionAnalysisListFile <- system.file("settings",
-                                              "predictionAnalysisList.json",
-                                              package = "AbxBetterChoice")
-    predictionAnalysisList <- PatientLevelPrediction::loadPredictionAnalysisList(predictionAnalysisListFile)
-    predictionAnalysisList$connectionDetails = connectionDetails
-    predictionAnalysisList$cdmDatabaseSchema = cdmDatabaseSchema
-    predictionAnalysisList$cdmDatabaseName = cdmDatabaseName
-    predictionAnalysisList$oracleTempSchema = oracleTempSchema
-    predictionAnalysisList$cohortDatabaseSchema = cohortDatabaseSchema
-    predictionAnalysisList$cohortTable = cohortTable
-    predictionAnalysisList$outcomeDatabaseSchema = cohortDatabaseSchema
-    predictionAnalysisList$outcomeTable = cohortTable
-    predictionAnalysisList$cdmVersion = cdmVersion
-    predictionAnalysisList$outputFolder = outputFolder
-    predictionAnalysisList$verbosity = verbosity
+  if(runAllAnalyses){
+    ParallelLogger::logInfo("Running predictions - ABCceftriaxone model")
+    outputFolder_model1 <- paste0(outputFolder, "/ABCceftriaxone")
+    ABCceftriaxone::execute(connectionDetails,
+                            cdmDatabaseSchema,
+                            cdmDatabaseName,
+                            cohortDatabaseSchema,
+                            cohortTable,
+                            oracleTempSchema,
+                            outputFolder_model1,
+                            createProtocol = F,
+                            createCohorts = T,
+                            runAnalyses = T,
+                            createResultsDoc = F,
+                            createValidationPackage = F,
+                            analysesToValidate = NULL,
+                            packageResults = F,
+                            minCellCount= 5,
+                            createShiny = T,
+                            createJournalDocument = F,
+                            analysisIdDocument = 1,
+                            verbosity = "INFO",
+                            cdmVersion = 5,
+                            cohortVariableSetting)
     
-    if(!is.null(cohortVariableSetting)){
-      ParallelLogger::logInfo("Adding custom covariates to analysis settings")
-      
-      pathToCustom <- system.file("settings", paste0(cohortVariableSetting, ".csv"), package = "AbxBetterChoice")
-      cohortVarsToCreate <- utils::read.csv(pathToCustom)
-      cohortCov <- list()
-      length(cohortCov) <- nrow(cohortVarsToCreate)+1
-      cohortCov[[1]] <- FeatureExtraction::createCovariateSettings(useDemographicsAgeGroup = T)
-      
-      for(i in 1:nrow(cohortVarsToCreate)){
-        cohortCov[[1+i]] <- createCohortCovariateSettings(covariateName = as.character(cohortVarsToCreate$cohortName[i]),
-                                                          covariateId = cohortVarsToCreate$cohortId[i]*1000+456, 
-                                                          count = F,
-                                                          cohortDatabaseSchema = cohortDatabaseSchema,
-                                                          cohortTable = cohortTable,
-                                                          cohortId = cohortVarsToCreate$atlasId[i],
-                                                          startDay=cohortVarsToCreate$startDay[i], 
-                                                          endDay=cohortVarsToCreate$endDay[i])
-      }
-      
-      for(i in 1:length(predictionAnalysisList$modelAnalysisList$covariateSettings)){
-        cohortCov[[1]] <- predictionAnalysisList$modelAnalysisList$covariateSettings[[i]]
-        predictionAnalysisList$modelAnalysisList$covariateSettings[[i]] <- cohortCov
-      }
-    }
+    ParallelLogger::logInfo("Running predictions - ABCciprofloxacin model")
+    outputFolder_model2 <- paste0(outputFolder, "/ABCciprofloxacin")
+    ABCciprofloxacin::execute(connectionDetails,
+                            cdmDatabaseSchema,
+                            cdmDatabaseName,
+                            cohortDatabaseSchema,
+                            cohortTable,
+                            oracleTempSchema,
+                            outputFolder_model2,
+                            createProtocol = F,
+                            createCohorts = T,
+                            runAnalyses = T,
+                            createResultsDoc = F,
+                            createValidationPackage = F,
+                            analysesToValidate = NULL,
+                            packageResults = F,
+                            minCellCount= 5,
+                            createShiny = T,
+                            createJournalDocument = F,
+                            analysisIdDocument = 1,
+                            verbosity = "INFO",
+                            cdmVersion = 5,
+                            cohortVariableSetting)
     
-    result <- do.call(PatientLevelPrediction::runPlpAnalyses, predictionAnalysisList)
+    ParallelLogger::logInfo("Running predictions - ABCtmpsmx model")
+    outputFolder_model3 <- paste0(outputFolder, "/ABCtmpsmx")
+    ABCtmpsmx::execute(connectionDetails,
+                            cdmDatabaseSchema,
+                            cdmDatabaseName,
+                            cohortDatabaseSchema,
+                            cohortTable,
+                            oracleTempSchema,
+                            outputFolder_model3,
+                            createProtocol = F,
+                            createCohorts = T,
+                            runAnalyses = T,
+                            createResultsDoc = F,
+                            createValidationPackage = F,
+                            analysesToValidate = NULL,
+                            packageResults = F,
+                            minCellCount= 5,
+                            createShiny = T,
+                            createJournalDocument = F,
+                            analysisIdDocument = 1,
+                            verbosity = "INFO",
+                            cdmVersion = 5,
+                            cohortVariableSetting)
   }
-  
-  if (packageResults) {
-    ParallelLogger::logInfo("Packaging results")
-    packageResults(outputFolder = outputFolder,
-                   minCellCount = minCellCount)
-  }
-  
-  if(createResultsDoc){
-    createMultiPlpReport(analysisLocation=outputFolder,
-                         protocolLocation = file.path(outputFolder,'protocol.docx'),
-                         includeModels = F)
-  }
-  
-  if(createValidationPackage){
-    predictionAnalysisListFile <- system.file("settings",
-                                              "predictionAnalysisList.json",
-                                              package = "AbxBetterChoice")
-    jsonSettings <-  tryCatch({Hydra::loadSpecifications(file=predictionAnalysisListFile)},
-                              error=function(cond) {
-                                stop('Issue with json file...')
-                              })
-    pn <- jsonlite::fromJSON(jsonSettings)$packageName
-    jsonSettings <- gsub(pn,paste0(pn,'Validation'),jsonSettings)
-    jsonSettings <- gsub('PatientLevelPredictionStudy','PatientLevelPredictionValidationStudy',jsonSettings)
-    
-    
-    createValidationPackage(modelFolder = outputFolder, 
-                            outputFolder = file.path(outputFolder, paste0(pn,'Validation')),
-                            minCellCount = minCellCount,
-                            databaseName = cdmDatabaseName,
-                            jsonSettings = jsonSettings,
-                            analysisIds = analysesToValidate,
-                            cohortVariableSetting = cohortVariableSetting)
-  }
-  
-  if (createShiny) {
-    populateShinyApp(outputDirectory = file.path(outputFolder, 'ShinyApp'),
-                     resultDirectory = outputFolder,
-                     minCellCount = minCellCount,
-                     databaseName = cdmDatabaseName)
-  }
-  
-  if(createJournalDocument){
-    predictionAnalysisListFile <- system.file("settings",
-                                              "predictionAnalysisList.json",
-                                              package = "AbxBetterChoice")
-    jsonSettings <-  tryCatch({Hydra::loadSpecifications(file=predictionAnalysisListFile)},
-                              error=function(cond) {
-                                stop('Issue with json file...')
-                              })
-    pn <- jsonlite::fromJSON(jsonSettings)
-    createJournalDocument(resultDirectory = outputFolder,
-                                      analysisId = analysisIdDocument, 
-                                      includeValidation = T,
-                                      cohortIds = pn$cohortDefinitions$id,
-                                      cohortNames = pn$cohortDefinitions$name)
-  }
-  
   
   invisible(NULL)
 }
