@@ -129,6 +129,7 @@ from
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
+WHERE value_as_concept_id != 0
 ) C
 
 
@@ -151,6 +152,7 @@ from
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
+WHERE value_as_concept_id != 0
 ) C
 
 
@@ -173,6 +175,7 @@ from
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
+WHERE value_as_concept_id != 0
 ) C
 
 
@@ -192,6 +195,8 @@ from
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
+and value_source_value is NOT NULL 
+and value_source_value != '0'
 ) C
 
 
