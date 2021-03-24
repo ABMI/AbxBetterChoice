@@ -155,7 +155,7 @@ execute <- function(connectionDetails,
       cohortCov[[1]] <- FeatureExtraction::createCovariateSettings(useDemographicsAgeGroup = T)
       
       for(i in 1:nrow(cohortVarsToCreate)){
-        cohortCov[[1+i]] <- createCohortCovariateSettings(covariateName = as.character(cohortVarsToCreate$cohortName[i]),
+        cohortCov[[1+i]] <- ABCtmpsmx::createCohortCovariateSettings(covariateName = as.character(cohortVarsToCreate$cohortName[i]),
                                                           covariateId = cohortVarsToCreate$cohortId[i]*1000+456, 
                                                           count = F,
                                                           cohortDatabaseSchema = cohortDatabaseSchema,

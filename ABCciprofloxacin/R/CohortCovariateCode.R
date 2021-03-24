@@ -99,7 +99,7 @@ getCohortCovariateData <- function(connection,
   return(result)
 }
 
-
+#' @export
 createCohortCovariateSettings <- function(covariateName, covariateId,
                                           cohortDatabaseSchema, cohortTable, cohortId,
                                           startDay=-30, endDay=0, count=T) {

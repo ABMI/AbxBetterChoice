@@ -24,7 +24,8 @@ execute(
   createJournalDocument = F,
   analysisIdDocument = 1,
   verbosity = "INFO",
-  cdmVersion = 5
+  cdmVersion = 5,
+  cohortVariableSetting = NULL
 )
 }
 \arguments{

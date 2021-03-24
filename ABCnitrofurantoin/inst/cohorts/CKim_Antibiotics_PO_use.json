@@ -1,0 +1,832 @@
+{
+  "ConceptSets": [
+    {
+      "id": 1,
+      "name": "[CSKIM] PO Antibiotics",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 40087253,
+              "CONCEPT_NAME": "vancomycin Oral Capsule",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "374281",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 21023112,
+              "CONCEPT_NAME": "Tobramycin Oral Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP364732",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42954957,
+              "CONCEPT_NAME": "Roxithromycin Tablet for Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4681502",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40080750,
+              "CONCEPT_NAME": "roxithromycin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "373804",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42954890,
+              "CONCEPT_NAME": "Roxithromycin Oral Granules",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4681437",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43161139,
+              "CONCEPT_NAME": "Roxithromycin Delayed Release Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP484509",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43262884,
+              "CONCEPT_NAME": "Roxithromycin Disintegrating Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP548064",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40923828,
+              "CONCEPT_NAME": "Roxithromycin Oral Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP2121790",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42954956,
+              "CONCEPT_NAME": "Roxithromycin Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4681501",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40063084,
+              "CONCEPT_NAME": "nafcillin Oral Capsule",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "372979",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40063087,
+              "CONCEPT_NAME": "nafcillin Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "372981",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40063088,
+              "CONCEPT_NAME": "nafcillin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "372982",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40057469,
+              "CONCEPT_NAME": "moxifloxacin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "374619",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36813395,
+              "CONCEPT_NAME": "moxifloxacin Oral Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4827429",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40058964,
+              "CONCEPT_NAME": "linezolid Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "374626",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43173178,
+              "CONCEPT_NAME": "linezolid Delayed Release Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP493696",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43205986,
+              "CONCEPT_NAME": "linezolid Granules for Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP493700",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36887562,
+              "CONCEPT_NAME": "linezolid Oral Granules",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP1005781",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 44081525,
+              "CONCEPT_NAME": "linezolid Oral Powder",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP1076156",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40058963,
+              "CONCEPT_NAME": "linezolid Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "375140",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43290853,
+              "CONCEPT_NAME": "linezolid Powder for Oral Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP555010",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43192080,
+              "CONCEPT_NAME": "moxifloxacin Delayed Release Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP467415",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40001160,
+              "CONCEPT_NAME": "levofloxacin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "372588",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43206354,
+              "CONCEPT_NAME": "Levofloxacin Delayed Release Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP497341",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 35137577,
+              "CONCEPT_NAME": "Levofloxacin Disintegrating Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4794750",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 35156353,
+              "CONCEPT_NAME": "Levofloxacin Oral Granules",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4813364",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40001159,
+              "CONCEPT_NAME": "levofloxacin Oral Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "477392",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40059632,
+              "CONCEPT_NAME": "gemifloxacin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "402430",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40032939,
+              "CONCEPT_NAME": "doxycycline Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "371966",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40032671,
+              "CONCEPT_NAME": "doxycycline Oral Capsule",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "371965",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40125871,
+              "CONCEPT_NAME": "doxycycline Extended Release Oral Capsule",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "578681",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40041242,
+              "CONCEPT_NAME": "erythromycin Oral Capsule",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "372059",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40041244,
+              "CONCEPT_NAME": "erythromycin Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "372062",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40029794,
+              "CONCEPT_NAME": "clarithromycin Extended Release Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "371541",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40029800,
+              "CONCEPT_NAME": "clarithromycin Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "371539",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40029802,
+              "CONCEPT_NAME": "clarithromycin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "371540",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40028726,
+              "CONCEPT_NAME": "ciprofloxacin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "371525",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40127787,
+              "CONCEPT_NAME": "ciprofloxacin Extended Release Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "597445",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40092561,
+              "CONCEPT_NAME": "cefpodoxime Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "371334",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40092559,
+              "CONCEPT_NAME": "cefpodoxime Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "371333",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43210819,
+              "CONCEPT_NAME": "cefpodoxime Delayed Release Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP432147",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43189006,
+              "CONCEPT_NAME": "cefpodoxime Granules for Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP432330",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40123619,
+              "CONCEPT_NAME": "cefpodoxime Oral Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "562651",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43589310,
+              "CONCEPT_NAME": "cefpodoxime Oral Granules",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP900896",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43156082,
+              "CONCEPT_NAME": "cefpodoxime Powder for Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP432374",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40092488,
+              "CONCEPT_NAME": "cefditoren Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "484948",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42972209,
+              "CONCEPT_NAME": "cefditoren Oral Granules",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4698619",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40013068,
+              "CONCEPT_NAME": "azithromycin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "370976",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40013064,
+              "CONCEPT_NAME": "azithromycin Oral Capsule",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "370974",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40013066,
+              "CONCEPT_NAME": "azithromycin Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "370975",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40096062,
+              "CONCEPT_NAME": "bacampicillin Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "370980",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40105046,
+              "CONCEPT_NAME": "amoxicillin / clavulanate Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "562250",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40131077,
+              "CONCEPT_NAME": "amoxicillin / clavulanate Oral Suspension",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "617301",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40009472,
+              "CONCEPT_NAME": "amoxicillin Oral Capsule",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "370578",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40009223,
+              "CONCEPT_NAME": "amoxicillin / sulbactam Oral Tablet",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "370881",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 40145354,
+              "CONCEPT_NAME": "amoxicillin Oral Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "756429",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            }
+          }
+          ]
+      }
+    }
+    ],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "DrugExposure": {
+          "CodesetId": 1
+        }
+      }
+      ],
+    "ObservationWindow": {
+      "PriorDays": 0,
+      "PostDays": 0
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": "All"
+    }
+  },
+  "QualifiedLimit": {
+    "Type": "First"
+  },
+  "ExpressionLimit": {
+    "Type": "All"
+  },
+  "InclusionRules": [],
+  "EndStrategy": {
+    "DateOffset": {
+      "DateField": "StartDate",
+      "Offset": 0
+    }
+  },
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "cdmVersionRange": ">=5.0.0"
+}

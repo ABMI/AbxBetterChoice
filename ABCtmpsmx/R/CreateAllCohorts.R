@@ -43,7 +43,8 @@ createCohorts <- function(connectionDetails,
                           cohortDatabaseSchema,
                           cohortTable = "cohort",
                           oracleTempSchema,
-                          outputFolder) {
+                          outputFolder,
+                          cohortVariableSetting = NULL) {
   if (!file.exists(outputFolder))
     dir.create(outputFolder)
   
