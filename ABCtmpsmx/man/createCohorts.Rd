@@ -10,7 +10,8 @@ createCohorts(
   cohortDatabaseSchema,
   cohortTable = "cohort",
   oracleTempSchema,
-  outputFolder
+  outputFolder,
+  cohortVariableSetting = NULL
 )
 }
 \arguments{

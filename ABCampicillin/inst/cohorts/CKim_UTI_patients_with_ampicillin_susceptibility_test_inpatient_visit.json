@@ -1,0 +1,234 @@
+{
+  "ConceptSets": [
+    {
+      "id": 0,
+      "name": "Urinary tract infection",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 81902,
+              "CONCEPT_NAME": "Urinary tract infectious disease",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "68566005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "urine culture",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 3026008,
+              "CONCEPT_NAME": "Bacteria identified in Urine by Culture",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "630-4",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "LOINC",
+              "CONCEPT_CLASS_ID": "Lab Test"
+            },
+            "includeDescendants": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "ampicillin susceptibility test",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 3016774,
+              "CONCEPT_NAME": "Ampicillin [Susceptibility] by Minimum inhibitory concentration (MIC)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "28-1",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "LOINC",
+              "CONCEPT_CLASS_ID": "Lab Test"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 3017595,
+              "CONCEPT_NAME": "Ampicillin [Susceptibility] by Disk diffusion (KB)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "29-9",
+              "DOMAIN_ID": "Measurement",
+              "VOCABULARY_ID": "LOINC",
+              "CONCEPT_CLASS_ID": "Lab Test"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "IP/ER/IP+ER",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 9201,
+              "CONCEPT_NAME": "Inpatient Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "IP",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 9203,
+              "CONCEPT_NAME": "Emergency Room Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "ER",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 262,
+              "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "ERIP",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "VisitOccurrence": {
+          "CorrelatedCriteria": {
+            "Type": "ALL",
+            "CriteriaList": [
+              {
+                "Criteria": {
+                  "Measurement": {
+                    "CorrelatedCriteria": {
+                      "Type": "ALL",
+                      "CriteriaList": [
+                        {
+                          "Criteria": {
+                            "Measurement": {
+                              "CodesetId": 2
+                            }
+                          },
+                          "StartWindow": {
+                            "Start": {
+                              "Days": 0,
+                              "Coeff": -1
+                            },
+                            "End": {
+                              "Days": 0,
+                              "Coeff": 1
+                            },
+                            "UseEventEnd": false
+                          },
+                          "Occurrence": {
+                            "Type": 2,
+                            "Count": 1
+                          }
+                        }
+                      ],
+                      "DemographicCriteriaList": [],
+                      "Groups": []
+                    },
+                    "CodesetId": 1
+                  }
+                },
+                "StartWindow": {
+                  "Start": {
+                    "Days": 0,
+                    "Coeff": 1
+                  },
+                  "End": {
+                    "Days": 3,
+                    "Coeff": 1
+                  },
+                  "UseEventEnd": false
+                },
+                "Occurrence": {
+                  "Type": 2,
+                  "Count": 1
+                }
+              }
+            ],
+            "DemographicCriteriaList": [],
+            "Groups": []
+          },
+          "CodesetId": 3,
+          "Age": {
+            "Value": 18,
+            "Op": "gte"
+          }
+        }
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": 0,
+      "PostDays": 0
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": "All"
+    }
+  },
+  "QualifiedLimit": {
+    "Type": "First"
+  },
+  "ExpressionLimit": {
+    "Type": "All"
+  },
+  "InclusionRules": [],
+  "EndStrategy": {
+    "DateOffset": {
+      "DateField": "EndDate",
+      "Offset": 0
+    }
+  },
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "cdmVersionRange": ">=5.0.0"
+}

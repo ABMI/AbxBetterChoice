@@ -1,0 +1,1266 @@
+{
+  "ConceptSets": [
+    {
+      "id": 0,
+      "name": "[CSKIM] IV Antibiotics",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 2025858,
+              "CONCEPT_NAME": "100 ML sodium chloride 9 MG/ML / vancomycin 10 MG/ML Injectable Solution [VANCO KIT] by UK Chemipharm",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4924453",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2011860,
+              "CONCEPT_NAME": "vancomycin 500 MG Injection [VANCOCIN-CP] by Menarini",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4953513",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2011856,
+              "CONCEPT_NAME": "vancomycin 1000 MG Injection [VANCOCIN-CP] by Menarini",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4953495",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42971908,
+              "CONCEPT_NAME": "Vancomycin 500 MG Injection [VANCOMYCIN HCI CJ]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4698321",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42971929,
+              "CONCEPT_NAME": "Vancomycin 1000 MG Injection [VANCOMYCIN HCI CJ]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4698342",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 902807,
+              "CONCEPT_NAME": "tobramycin 40 MG/ML Injectable Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "597823",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42921813,
+              "CONCEPT_NAME": "2 ML Tobramycin 40 MG/ML Injectable Solution [TRONAMYCIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4648633",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2029154,
+              "CONCEPT_NAME": "2 ML tobramycin 40 MG/ML Injectable Solution [TRONAMYCIN] by Kukje",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4927890",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42973613,
+              "CONCEPT_NAME": "Piperacillin 4000 MG / tazobactam 500 MG Injection [TAZOPERAN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4700018",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42973612,
+              "CONCEPT_NAME": "Piperacillin 4000 MG / tazobactam 500 MG Injection [TAZO V]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4700017",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42973631,
+              "CONCEPT_NAME": "Piperacillin 2000 MG / tazobactam 250 MG Injection [TAZOPERAN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4700036",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42973619,
+              "CONCEPT_NAME": "Piperacillin 4000 MG / tazobactam 500 MG Injection [TABAXIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4700024",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42973630,
+              "CONCEPT_NAME": "Piperacillin 2000 MG / tazobactam 250 MG Injection [TAZO V]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4700035",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42973636,
+              "CONCEPT_NAME": "Piperacillin 2000 MG / tazobactam 250 MG Injection [TABAXIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4700041",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 35605336,
+              "CONCEPT_NAME": "nafcillin 1000 MG Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1721458",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42945913,
+              "CONCEPT_NAME": "Nafcillin 1000 MG Injection [BORYUNG NAFCILLIN NA]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4672524",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42918875,
+              "CONCEPT_NAME": "250 ML moxifloxacin 1.6 MG/ML Injectable Solution [Avelox]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4645754",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42918880,
+              "CONCEPT_NAME": "250 ML moxifloxacin 1.6 MG/ML Injectable Solution [MOVELOXIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4645758",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42956740,
+              "CONCEPT_NAME": "meropenem 1000 MG Injection [POSPENEM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4683276",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42956767,
+              "CONCEPT_NAME": "meropenem 500 MG Injection [MEROPEN YUHAN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4683303",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42956781,
+              "CONCEPT_NAME": "meropenem 500 MG Injection [POSPENEM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4683316",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42918825,
+              "CONCEPT_NAME": "300 ML linezolid 2 MG/ML Injectable Solution [Zyvox]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4645705",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42919971,
+              "CONCEPT_NAME": "50 ML Levofloxacin 5 MG/ML Injectable Solution [CRAVIT]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4646829",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42919478,
+              "CONCEPT_NAME": "100 ML Levofloxacin 5 MG/ML Injectable Solution [CRAVIT]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4646345",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2025839,
+              "CONCEPT_NAME": "100 ML levofloxacin 5 MG/ML Injectable Solution [LEFOCIN] by Shinpoong",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4924434",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42919103,
+              "CONCEPT_NAME": "150 ML Levofloxacin 5 MG/ML Injectable Solution [LEVOFLOXACIN CJ]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4645976",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2026275,
+              "CONCEPT_NAME": "50 ML levofloxacin 5 MG/ML Injectable Solution [LEFOCIN] by Shinpoong",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4924905",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42919097,
+              "CONCEPT_NAME": "150 ML Levofloxacin 5 MG/ML Injectable Solution [LEFOCIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4645970",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42942534,
+              "CONCEPT_NAME": "Cilastatin 500 MG / Imipenem 500 MG Injection [PREPENEM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4669173",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42942537,
+              "CONCEPT_NAME": "Cilastatin 500 MG / Imipenem 500 MG Injection [CILAPENEM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4669176",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36268327,
+              "CONCEPT_NAME": "Cilastatin 500 MG / Imipenem 500 MG Injection [TIENAM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP3119202",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 35604059,
+              "CONCEPT_NAME": "cilastatin 250 MG / imipenem 250 MG Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1726204",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42942532,
+              "CONCEPT_NAME": "Cilastatin 250 MG / Imipenem 250 MG Injection [PREPENEM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4669171",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42932488,
+              "CONCEPT_NAME": "gemifloxacin 200 MG Injection [Factive]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4659235",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2050019,
+              "CONCEPT_NAME": "erythromycin 500 MG Injection [Erythrocin] by Menarini",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4950445",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 19076753,
+              "CONCEPT_NAME": "doxycycline hyclate 100 MG Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "310027",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42948110,
+              "CONCEPT_NAME": "Colistin 150 MG Injection [COLIS]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4674700",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2040319,
+              "CONCEPT_NAME": "colistin 150 MG Injection [HUH COLISTIMETHATE] by Seoul Medical",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4939944",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2049420,
+              "CONCEPT_NAME": "clarithromycin 500 MG Injection [Klaricid] by Ilsung",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4949780",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46287391,
+              "CONCEPT_NAME": "ciprofloxacin 10 MG/ML Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1665228",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42918950,
+              "CONCEPT_NAME": "200 ML Ciprofloxacin 2 MG/ML Injectable Solution [CYCIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4645827",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42919375,
+              "CONCEPT_NAME": "100 ML Ciprofloxacin 2 MG/ML Injectable Solution [CYCIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4646243",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2025375,
+              "CONCEPT_NAME": "200 ML ciprofloxacin 2 MG/ML Injectable Solution [Ciprobay] by Bayer",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4923964",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2025755,
+              "CONCEPT_NAME": "100 ML ciprofloxacin 2 MG/ML Injectable Solution [Ciprobay] by Bayer",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4924352",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46287383,
+              "CONCEPT_NAME": "ciprofloxacin 2 MG/ML Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1665211",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42941696,
+              "CONCEPT_NAME": "Ceftriaxone 2000 MG Injection [TRIAXONE]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4668339",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42941778,
+              "CONCEPT_NAME": "Ceftriaxone 1000 MG Injection [TRIAXONE]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4668419",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42941849,
+              "CONCEPT_NAME": "Ceftriaxone 500 MG Injection [TRIAXONE]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4668491",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2048087,
+              "CONCEPT_NAME": "ceftriaxone 2000 MG Injection by Boryung",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4948418",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2025805,
+              "CONCEPT_NAME": "100 ML ceftriaxone 10 MG/ML Injectable Solution by JW",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4924403",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2048075,
+              "CONCEPT_NAME": "ceftriaxone 2000 MG Injection [TRIAXONE] by Hanmi",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4948405",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2048118,
+              "CONCEPT_NAME": "ceftriaxone 1000 MG Injection [TRIAXONE] by Hanmi",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4948452",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46275516,
+              "CONCEPT_NAME": "ceftazidime 1000 MG Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1659283",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42940768,
+              "CONCEPT_NAME": "Ceftazidime 2000 MG Injection [TAZIME]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4667419",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42940785,
+              "CONCEPT_NAME": "Ceftazidime 1000 MG Injection [CEFAZIME]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4667436",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42940788,
+              "CONCEPT_NAME": "Ceftazidime 1000 MG Injection [TAZIME]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4667439",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42942198,
+              "CONCEPT_NAME": "Cefotaxime 2000 MG Injection [CJ CEFOTAXIME SODIUM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4668838",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46275706,
+              "CONCEPT_NAME": "cefotaxime 1000 MG Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1656313",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42942166,
+              "CONCEPT_NAME": "Cefotaxime 1000 MG Injection [CJ CEFOTAXIME SODIUM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4668806",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42942149,
+              "CONCEPT_NAME": "Cefotaxime 500 MG Injection [CJ CEFOTAXIME SODIUM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4668789",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2048456,
+              "CONCEPT_NAME": "cefotaxime 500 MG Injection by Shinpoong",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4948791",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42936692,
+              "CONCEPT_NAME": "cefepime 1000 MG Injection [BORYUNG MAXIPIME]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4663389",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46287358,
+              "CONCEPT_NAME": "cefepime 500 MG Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1665097",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42947161,
+              "CONCEPT_NAME": "Cefazolin 1000 MG Injection [CKD CEFAZOLINE]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4673759",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46287307,
+              "CONCEPT_NAME": "aztreonam 1000 MG Injection",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1664981",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42952536,
+              "CONCEPT_NAME": "Aztreonam 1000 MG Injection [MEZACTAM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4679098",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42952534,
+              "CONCEPT_NAME": "Aztreonam 500 MG Injection [MEZACTAM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4679096",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 35603391,
+              "CONCEPT_NAME": "azithromycin 500 MG Injection [Zithromax]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1668240",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2050609,
+              "CONCEPT_NAME": "azithromycin 500 MG Injection [AZITOPS] by Ildong",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4951065",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42966044,
+              "CONCEPT_NAME": "Ampicillin 500 MG / Sulbactam 250 MG Injection [Unasyn]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4692508",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42966047,
+              "CONCEPT_NAME": "Ampicillin 500 MG / Sulbactam 250 MG Injection [UBACSIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4692511",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42966048,
+              "CONCEPT_NAME": "Ampicillin 500 MG / Sulbactam 250 MG Injection [AMPIBACTAM]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4692512",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42966056,
+              "CONCEPT_NAME": "Ampicillin 500 MG / Sulbactam 250 MG Injection [UBACILLIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4692520",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42966036,
+              "CONCEPT_NAME": "Ampicillin 1000 MG / Sulbactam 500 MG Injection [BACTACIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4692500",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42966083,
+              "CONCEPT_NAME": "Ampicillin 500 MG Injection [PENBREX]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4692547",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42966033,
+              "CONCEPT_NAME": "Ampicillin 1000 MG / Sulbactam 500 MG Injection [UBACSIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4692497",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2051216,
+              "CONCEPT_NAME": "ampicillin 500 MG / sulbactam 250 MG Injection [Sulbacillin] by Daewoong",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4951694",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42951958,
+              "CONCEPT_NAME": "Amoxicillin 1000 MG / Clavulanate 200 MG Injection [IL SUNG AUGMENTIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4678520",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42951306,
+              "CONCEPT_NAME": "Amoxicillin 500 MG / Clavulanate 100 MG Injection [ILSUNG AUGMENTIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4677877",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42951305,
+              "CONCEPT_NAME": "Amoxicillin 500 MG / Clavulanate 100 MG Injection [CLAMOXIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4677876",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42951954,
+              "CONCEPT_NAME": "Amoxicillin 1000 MG / Clavulanate 200 MG Injection [CLAMOXIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4678516",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2051434,
+              "CONCEPT_NAME": "amoxicillin 500 MG / sulbactam 250 MG Injection [AMOXISULTAM] by Hanmi",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4951916",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2051389,
+              "CONCEPT_NAME": "amoxicillin 1000 MG / sulbactam 500 MG Injection [AMOXISULTAM] by Hanmi",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4951870",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2029377,
+              "CONCEPT_NAME": "2 ML amikacin 125 MG/ML Injectable Solution [Amikin] by Boryung",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4928115",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2029361,
+              "CONCEPT_NAME": "2 ML amikacin 250 MG/ML Injectable Solution [Amikin] by Boryung",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4928100",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Marketed Product"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42921833,
+              "CONCEPT_NAME": "2 ML Amikacin 125 MG/ML Injectable Solution [SHINPOONG AMIKACIN SULFATE]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4648653",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42921842,
+              "CONCEPT_NAME": "2 ML Amikacin 250 MG/ML Injectable Solution [SHINPOONG AMIKACIN SULFATE]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4648662",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            }
+          }
+          ]
+      }
+    }
+    ],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "DrugExposure": {
+          "CodesetId": 0
+        }
+      }
+      ],
+    "ObservationWindow": {
+      "PriorDays": 0,
+      "PostDays": 0
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": "All"
+    }
+  },
+  "QualifiedLimit": {
+    "Type": "First"
+  },
+  "ExpressionLimit": {
+    "Type": "All"
+  },
+  "InclusionRules": [],
+  "EndStrategy": {
+    "DateOffset": {
+      "DateField": "StartDate",
+      "Offset": 0
+    }
+  },
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "cdmVersionRange": ">=5.0.0"
+}

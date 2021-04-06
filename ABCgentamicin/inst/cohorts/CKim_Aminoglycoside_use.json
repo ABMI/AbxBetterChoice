@@ -1,0 +1,264 @@
+{
+  "ConceptSets": [
+    {
+      "id": 1,
+      "name": "[CSKIM] Aminoglycoside",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 42921086,
+              "CONCEPT_NAME": "5 ML Tobramycin 3 MG/ML Ophthalmic Solution [TORAMICIN]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4647923",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 42918032,
+              "CONCEPT_NAME": "5000 MG Dexamethasone 0.001 MG/MG / Neomycin 0.0035 MG/MG / Polymyxin B 6 UNT/MG Ophthalmic Ointment [NEODEX]",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP4644921",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Quant Branded Drug"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43166939,
+              "CONCEPT_NAME": "Dexamethasone 0.001 MG/MG / Neomycin 3.5 UNT/MG / Polymyxin B 6 UNT/MG Ophthalmic Ointment",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP518069",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43177991,
+              "CONCEPT_NAME": "Dexamethasone 1 MG/ML / Neomycin 3500 UNT/ML / Polymyxin B 6000 UNT/ML Ophthalmic Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "OMOP518119",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm Extension",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 1790868,
+              "CONCEPT_NAME": "amikacin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "641",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 1734104,
+              "CONCEPT_NAME": "azithromycin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "18631",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 1746940,
+              "CONCEPT_NAME": "erythromycin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "4053",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 902722,
+              "CONCEPT_NAME": "tobramycin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10627",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 902741,
+              "CONCEPT_NAME": "tobramycin 3 MG/ML Ophthalmic Solution",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "313415",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 915981,
+              "CONCEPT_NAME": "neomycin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "7299",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 45892419,
+              "CONCEPT_NAME": "gentamicin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1596450",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 1594403,
+              "CONCEPT_NAME": "gentamicin Topical Cream",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1870264",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Clinical Drug Form"
+            },
+            "isExcluded": true,
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 19017585,
+              "CONCEPT_NAME": "netilmicin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "7337",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 1784749,
+              "CONCEPT_NAME": "kanamycin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "6099",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          }
+          ]
+      }
+    }
+    ],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "DrugExposure": {
+          "CodesetId": 1
+        }
+      }
+      ],
+    "ObservationWindow": {
+      "PriorDays": 0,
+      "PostDays": 0
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": "All"
+    }
+  },
+  "QualifiedLimit": {
+    "Type": "First"
+  },
+  "ExpressionLimit": {
+    "Type": "All"
+  },
+  "InclusionRules": [],
+  "EndStrategy": {
+    "DateOffset": {
+      "DateField": "StartDate",
+      "Offset": 0
+    }
+  },
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "cdmVersionRange": ">=5.0.0"
+}

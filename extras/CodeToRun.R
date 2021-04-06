@@ -19,6 +19,9 @@ devtools::install(file.path(getwd(), "ABCciprofloxacin"))
 devtools::install(file.path(getwd(), "ABCtmpsmx"))
 devtools::install(file.path(getwd(), "ABClevofloxacin"))
 devtools::install(file.path(getwd(), "ABCnitrofurantoin"))
+devtools::install(file.path(getwd(), "ABCtetracycline"))
+devtools::install(file.path(getwd(), "ABCgentamicin"))
+devtools::install(file.path(getwd(), "ABCampicillin"))
 devtools::install(getwd())
 
 # Load the package

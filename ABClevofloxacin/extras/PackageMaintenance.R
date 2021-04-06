@@ -16,12 +16,12 @@
 
 # Format and check code ---------------------------------------------------
 OhdsiRTools::formatRFolder()
-OhdsiRTools::checkUsagePackage("evidnet")
+OhdsiRTools::checkUsagePackage("ABClevofloxacin")
 OhdsiRTools::updateCopyrightYearFolder()
 
 # Create manual -----------------------------------------------------------
-shell("rm extras/evidnet.pdf")
-shell("R CMD Rd2pdf ./ --output=extras/evidnet.pdf")
+shell("rm extras/ABClevofloxacin.pdf")
+shell("R CMD Rd2pdf ./ --output=extras/ABClevofloxacin.pdf")
 
 # Create vignette ---------------------------------------------------------
 rmarkdown::render("vignettes/UsingSkeletonPackage.Rmd",
@@ -37,11 +37,11 @@ OhdsiRTools::insertCohortDefinitionSetInPackage(fileName = "CohortsToCreate.csv"
                                                 insertTableSql = TRUE,
                                                 insertCohortCreationR = TRUE,
                                                 generateStats = FALSE,
-                                                packageName = "evidnet")
+                                                packageName = "ABClevofloxacin")
 
 # Create analysis details -------------------------------------------------
 source("extras/CreatePredictionAnalysisDetails.R")
 createAnalysesDetails("inst/settings")
 
 # Store environment in which the study was executed -----------------------
-OhdsiRTools::insertEnvironmentSnapshotInPackage("evidnet")
+OhdsiRTools::insertEnvironmentSnapshotInPackage("ABClevofloxacin")

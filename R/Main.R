@@ -222,6 +222,78 @@ execute <- function(connectionDetails,
                        verbosity = "INFO",
                        cdmVersion = 5,
                        cohortVariableSetting)
+    
+    ParallelLogger::logInfo("Running predictions - ABCampicillin model")
+    outputFolder_model6 <- paste0(outputFolder, "/ABCampicillin")
+    ABCampicillin::execute(connectionDetails,
+                            cdmDatabaseSchema,
+                            cdmDatabaseName,
+                            cohortDatabaseSchema,
+                            cohortTable,
+                            oracleTempSchema,
+                            outputFolder = outputFolder_model6,
+                            createProtocol = F,
+                            createCohorts = F,
+                            runAnalyses = T,
+                            createResultsDoc = F,
+                            createValidationPackage = F,
+                            analysesToValidate = NULL,
+                            packageResults = F,
+                            minCellCount= 5,
+                            createShiny = T,
+                            createJournalDocument = F,
+                            analysisIdDocument = 1,
+                            verbosity = "INFO",
+                            cdmVersion = 5,
+                            cohortVariableSetting)
+    
+    ParallelLogger::logInfo("Running predictions - ABCgentamicin model")
+    outputFolder_model7 <- paste0(outputFolder, "/ABCgentamicin")
+    ABCgentamicin::execute(connectionDetails,
+                            cdmDatabaseSchema,
+                            cdmDatabaseName,
+                            cohortDatabaseSchema,
+                            cohortTable,
+                            oracleTempSchema,
+                            outputFolder = outputFolder_model7,
+                            createProtocol = F,
+                            createCohorts = F,
+                            runAnalyses = T,
+                            createResultsDoc = F,
+                            createValidationPackage = F,
+                            analysesToValidate = NULL,
+                            packageResults = F,
+                            minCellCount= 5,
+                            createShiny = T,
+                            createJournalDocument = F,
+                            analysisIdDocument = 1,
+                            verbosity = "INFO",
+                            cdmVersion = 5,
+                            cohortVariableSetting)
+    
+    ParallelLogger::logInfo("Running predictions - ABCtetracycline model")
+    outputFolder_model8 <- paste0(outputFolder, "/ABCtetracycline")
+    ABCtetracycline::execute(connectionDetails,
+                            cdmDatabaseSchema,
+                            cdmDatabaseName,
+                            cohortDatabaseSchema,
+                            cohortTable,
+                            oracleTempSchema,
+                            outputFolder = outputFolder_model8,
+                            createProtocol = F,
+                            createCohorts = F,
+                            runAnalyses = T,
+                            createResultsDoc = F,
+                            createValidationPackage = F,
+                            analysesToValidate = NULL,
+                            packageResults = F,
+                            minCellCount= 5,
+                            createShiny = T,
+                            createJournalDocument = F,
+                            analysisIdDocument = 1,
+                            verbosity = "INFO",
+                            cdmVersion = 5,
+                            cohortVariableSetting)
   }
   
   invisible(NULL)
