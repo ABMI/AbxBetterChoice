@@ -91,3 +91,12 @@ Execute the Study
 \details{
 This function executes the AbxBetterChoice Study.
 }
+\examples{
+\dontrun{
+connectionDetails <- createConnectionDetails(dbms = "postgresql",
+                                             user = "joe",
+                                             password = "secret",
+                                             server = "myserver")
+}
+
+}
