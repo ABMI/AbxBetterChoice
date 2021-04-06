@@ -158,7 +158,7 @@ execute <- function(connectionDetails,
       
       for(i in 1:nrow(cohortVarsToCreate)){
         cohortCov[[1+i]] <- ABCnitrofurantoin::createCohortCovariateSettings(covariateName = as.character(cohortVarsToCreate$cohortName[i]),
-                                                          covariateId = cohortVarsToCreate$cohortId[i]*1000+456, 
+                                                          covariateId = as.integer(paste0(cohortVarsToCreate$cohortId[i], abs(cohortVarsToCreate$startDay[i]), abs(cohortVarsToCreate$endDay[i]), 456)),
                                                           count = F,
                                                           cohortDatabaseSchema = cohortDatabaseSchema,
                                                           cohortTable = cohortTable,
