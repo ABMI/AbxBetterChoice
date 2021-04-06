@@ -39,7 +39,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -61,7 +61,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -83,7 +83,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -102,7 +102,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
 select m.* 
-FROM @cdm_database_schema.MEASUREMENT m
+FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
 ) C 
 --- for restricting the result from specific culture
@@ -111,7 +111,7 @@ JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and 
   from @cdm_database_schema.fact_relationship 
   where fact_id_1 in (
     select distinct ms.measurement_id 
-    FROM @cdm_database_schema.MEASUREMENT ms
+    FROM @cdm_database_schema.measurement_backup ms
     JOIN #Codesets codesets on ((ms.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
     WHERE ms.value_as_concept_id in (4149419)
     )) and  C.value_source_value in ('I', 'R')

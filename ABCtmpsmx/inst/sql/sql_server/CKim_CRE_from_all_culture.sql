@@ -46,7 +46,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -68,7 +68,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -90,7 +90,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -109,7 +109,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
 ) C
 where C.measurement_id in (
@@ -117,7 +117,7 @@ where C.measurement_id in (
   from @cdm_database_schema.fact_relationship 
   where fact_id_1 in (
     select distinct ms.measurement_id 
-    FROM @cdm_database_schema.MEASUREMENT ms
+    FROM @cdm_database_schema.measurement_backup ms
     JOIN #Codesets codesets on ((ms.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
     WHERE ms.value_as_concept_id in (4023812,4149253,4051640,4295448,4205585,4016020,4014816,4269070,36684336,4016448,4016449,4017113,40484223,4242438,4223548,4016601,4016164,4140527,4016600,4030716,4014972,4011683,4219241,4312475,4204079,4078241,4226115,4295899,4327473,4267438,4254213,4209452,4275741,4070556,4266088,4238672,4138394,4332097,4238215,4348164,4348429,4352626,4018786,4018788,4296403,37396510,4196666,4221197,4248426,4163698,4164566,4186601,4030558,4078364,4031192,4001253,4212063,4166421,4195412,4184768,4162406,37016674,4021050,4019607,4020059,4170580,4198204,4011216,4028952,4140691,4016238,4104185,4183695,4311807,4180726,4275872,4235004)
     )) and  C.value_source_value in ('I', 'R')

@@ -17,6 +17,8 @@
 devtools::install(file.path(getwd(), "ABCceftriaxone"))
 devtools::install(file.path(getwd(), "ABCciprofloxacin"))
 devtools::install(file.path(getwd(), "ABCtmpsmx"))
+devtools::install(file.path(getwd(), "ABClevofloxacin"))
+devtools::install(file.path(getwd(), "ABCnitrofurantoin"))
 devtools::install(getwd())
 
 # Load the package
@@ -50,6 +52,19 @@ databaseId <- "CCAE"
 databaseName <- "IBM MarketScan Commercial Claims and Encounters Database"
 databaseDescription <- "IBM MarketScan® Commercial Claims and Encounters Database (CCAE) represent data from individuals enrolled in United States employer-sponsored insurance health plans. The data includes adjudicated health insurance claims (e.g. inpatient, outpatient, and outpatient pharmacy) as well as enrollment data from large employers and health plans who provide private healthcare coverage to employees, their spouses, and dependents. Additionally, it captures laboratory tests for a subset of the covered lives. This administrative claims database includes a variety of fee-for-service, preferred provider organizations, and capitated health plans." 
 
+execute(connectionDetails = connectionDetails,
+        cdmDatabaseSchema = cdmDatabaseSchema,
+        cdmDatabaseName = cdmDatabaseName,
+        cohortDatabaseSchema = cohortDatabaseSchema,
+        oracleTempSchema = oracleTempSchema,
+        cohortTable = cohortTable,
+        outputFolder = outputFolder,
+        createCohort = T,
+        runAllAnalyses = F,
+        minCellCount= 5,
+        analysisIdDocument = 1,
+        cohortVariableSetting = "cohortCovariate")
+
 # Use this to run the cohortDiagnostics. The results will be stored in the diagnosticsExport subfolder of the outputFolder. This can be shared between sites.
 AbxBetterChoice::runCohortDiagnostics(connectionDetails = connectionDetails,
                                      cdmDatabaseSchema = cdmDatabaseSchema,
@@ -60,7 +75,7 @@ AbxBetterChoice::runCohortDiagnostics(connectionDetails = connectionDetails,
                                      databaseId = databaseId,
                                      databaseName = databaseName,
                                      databaseDescription = databaseDescription,
-                                     createCohorts = TRUE,
+                                     createCohorts = FALSE,
                                      runInclusionStatistics = TRUE,
                                      runIncludedSourceConcepts = TRUE,
                                      runOrphanConcepts = TRUE,
@@ -88,7 +103,8 @@ execute(connectionDetails = connectionDetails,
         oracleTempSchema = oracleTempSchema,
         cohortTable = cohortTable,
         outputFolder = outputFolder,
-        runAnalyses = F,
+        createCohort = F,
+        runAllAnalyses = T,
         minCellCount= 5,
         analysisIdDocument = 1,
         cohortVariableSetting = "cohortCovariate")

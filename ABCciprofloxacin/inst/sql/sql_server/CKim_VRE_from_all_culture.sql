@@ -46,7 +46,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -68,7 +68,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -90,7 +90,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
@@ -109,7 +109,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
 ) C
 where C.measurement_id in (
@@ -117,7 +117,7 @@ where C.measurement_id in (
   from @cdm_database_schema.fact_relationship 
   where fact_id_1 in (
     select distinct ms.measurement_id 
-    FROM @cdm_database_schema.MEASUREMENT ms
+    FROM @cdm_database_schema.measurement_backup ms
     JOIN #Codesets codesets on ((ms.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
     WHERE ms.value_as_concept_id in (4234555,4302157,4338685,4180694,4149104,4011481,4251482,4101235,4263064,4034132)
     )) and C.value_source_value in ('I', 'R')
@@ -145,7 +145,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
 ) C
 WHERE C.value_as_concept_id in (4034133, 4263064, 4101235, 4302157, 4338685, 4180694, 4149104, 4011481, 4234555)

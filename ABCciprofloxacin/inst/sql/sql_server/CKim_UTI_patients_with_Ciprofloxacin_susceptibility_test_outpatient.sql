@@ -127,7 +127,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
 WHERE value_as_concept_id != 0
 ) C
@@ -150,7 +150,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
 WHERE value_as_concept_id != 0
 ) C
@@ -173,7 +173,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
 WHERE value_as_concept_id != 0
 ) C
@@ -193,7 +193,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.measurement_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
 and value_source_value is NOT NULL 
 and value_source_value != '0'

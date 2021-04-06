@@ -127,7 +127,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
                 from 
                 (
                   select m.* 
-                    FROM @cdm_database_schema.MEASUREMENT m
+                    FROM @cdm_database_schema.measurement_backup m
                   JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
                   WHERE value_as_concept_id != 0
                 ) C
@@ -150,7 +150,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
                               from 
                               (
                                 select m.* 
-                                  FROM @cdm_database_schema.MEASUREMENT m
+                                  FROM @cdm_database_schema.measurement_backup m
                                 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
                                 WHERE value_as_concept_id != 0
                               ) C
@@ -173,7 +173,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
                                 from 
                                 (
                                   select m.* 
-                                    FROM @cdm_database_schema.MEASUREMENT m
+                                    FROM @cdm_database_schema.measurement_backup m
                                   JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 1))
                                   WHERE value_as_concept_id != 0
                                 ) C
@@ -193,7 +193,7 @@ with primary_events (event_id, person_id, start_date, end_date, op_start_date, o
                       from 
                       (
                         select m.* 
-                          FROM @cdm_database_schema.MEASUREMENT m
+                          FROM @cdm_database_schema.measurement_backup m
                         JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
                         WHERE measurement_id in (select distinct fact_id_2 from @cdm_database_schema.fact_relationship where domain_concept_id_1 in (3026008))
                         and value_source_value is NOT NULL 

@@ -31,7 +31,7 @@ select C.person_id, C.measurement_id as event_id, C.measurement_date as start_da
 from 
 (
   select m.* 
-  FROM @cdm_database_schema.MEASUREMENT m
+  FROM @cdm_database_schema.MEASUREMENT_backup m
 JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 WHERE measurement_id in (select distinct fact_id_2 from @cdm_database_schema.fact_relationship where domain_concept_id_1 in (3026008))
 and value_source_value in ('R','I')

@@ -12,6 +12,7 @@ execute(
   cohortTable = "cohort",
   oracleTempSchema = cohortDatabaseSchema,
   outputFolder,
+  createCohorts = F,
   runAllAnalyses = F,
   analysesToValidate = NULL,
   minCellCount = 5,
@@ -47,6 +48,8 @@ priviliges for storing temporary tables.}
 (/). Do not use a folder on a network drive since this greatly impacts
 performance.}
 
+\item{createCohorts}{Create the cohortTable table with the target population and outcome cohorts?}
+
 \item{runAllAnalyses}{Run the model development}
 
 \item{analysesToValidate}{A vector of analysis ids (e.g., c(1,3,10)) specifying which analysese to export into validation package. Default is NULL and all are exported.}
@@ -71,8 +74,6 @@ in packaged results.}
 \item{cohortVariableSetting}{the name of the custom cohort covariate settings to use}
 
 \item{createProtocol}{Creates a protocol based on the analyses specification}
-
-\item{createCohorts}{Create the cohortTable table with the target population and outcome cohorts?}
 
 \item{createResultsDoc}{Create a document containing the results of each prediction}
 

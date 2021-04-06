@@ -67,7 +67,7 @@
 #'                                              user = "joe",
 #'                                              password = "secret",
 #'                                              server = "myserver")
-#'
+#' }
 #'
 #' @export
 execute <- function(connectionDetails,
@@ -77,6 +77,7 @@ execute <- function(connectionDetails,
                     cohortTable = "cohort",
                     oracleTempSchema = cohortDatabaseSchema,
                     outputFolder,
+                    createCohorts = F,
                     runAllAnalyses = F,
                     analysesToValidate = NULL,
                     minCellCount= 5,
@@ -90,6 +91,17 @@ execute <- function(connectionDetails,
   
   ParallelLogger::addDefaultFileLogger(file.path(outputFolder, "log.txt"))
   
+  if (createCohorts) {
+    ParallelLogger::logInfo("Creating cohorts")
+    AbxBetterChoice::createCohorts(connectionDetails = connectionDetails,
+                                  cdmDatabaseSchema = cdmDatabaseSchema,
+                                  cohortDatabaseSchema = cohortDatabaseSchema,
+                                  cohortTable = cohortTable,
+                                  oracleTempSchema = oracleTempSchema,
+                                  outputFolder = outputFolder,
+                                  cohortVariableSetting = cohortVariableSetting)
+  }
+  
   if(runAllAnalyses){
     ParallelLogger::logInfo("Running predictions - ABCceftriaxone model")
     outputFolder_model1 <- paste0(outputFolder, "/ABCceftriaxone")
@@ -99,9 +111,9 @@ execute <- function(connectionDetails,
                             cohortDatabaseSchema,
                             cohortTable,
                             oracleTempSchema,
-                            outputFolder_model1,
+                            outputFolder = outputFolder_model1,
                             createProtocol = F,
-                            createCohorts = T,
+                            createCohorts = F,
                             runAnalyses = T,
                             createResultsDoc = F,
                             createValidationPackage = F,
@@ -123,9 +135,9 @@ execute <- function(connectionDetails,
                             cohortDatabaseSchema,
                             cohortTable,
                             oracleTempSchema,
-                            outputFolder_model2,
+                            outputFolder = outputFolder_model2,
                             createProtocol = F,
-                            createCohorts = T,
+                            createCohorts = F,
                             runAnalyses = T,
                             createResultsDoc = F,
                             createValidationPackage = F,
@@ -147,9 +159,9 @@ execute <- function(connectionDetails,
                             cohortDatabaseSchema,
                             cohortTable,
                             oracleTempSchema,
-                            outputFolder_model3,
+                            outputFolder = outputFolder_model3,
                             createProtocol = F,
-                            createCohorts = T,
+                            createCohorts = F,
                             runAnalyses = T,
                             createResultsDoc = F,
                             createValidationPackage = F,
@@ -162,6 +174,54 @@ execute <- function(connectionDetails,
                             verbosity = "INFO",
                             cdmVersion = 5,
                             cohortVariableSetting)
+    
+    ParallelLogger::logInfo("Running predictions - ABClevofloxacin model")
+    outputFolder_model4 <- paste0(outputFolder, "/ABClevofloxacin")
+    ABClevofloxacin::execute(connectionDetails,
+                       cdmDatabaseSchema,
+                       cdmDatabaseName,
+                       cohortDatabaseSchema,
+                       cohortTable,
+                       oracleTempSchema,
+                       outputFolder = outputFolder_model4,
+                       createProtocol = F,
+                       createCohorts = F,
+                       runAnalyses = T,
+                       createResultsDoc = F,
+                       createValidationPackage = F,
+                       analysesToValidate = NULL,
+                       packageResults = F,
+                       minCellCount= 5,
+                       createShiny = T,
+                       createJournalDocument = F,
+                       analysisIdDocument = 1,
+                       verbosity = "INFO",
+                       cdmVersion = 5,
+                       cohortVariableSetting)
+    
+    ParallelLogger::logInfo("Running predictions - ABCnitrofurantoin model")
+    outputFolder_model5 <- paste0(outputFolder, "/ABCnitrofurantoin")
+    ABCnitrofurantoin::execute(connectionDetails,
+                       cdmDatabaseSchema,
+                       cdmDatabaseName,
+                       cohortDatabaseSchema,
+                       cohortTable,
+                       oracleTempSchema,
+                       outputFolder = outputFolder_model5,
+                       createProtocol = F,
+                       createCohorts = F,
+                       runAnalyses = T,
+                       createResultsDoc = F,
+                       createValidationPackage = F,
+                       analysesToValidate = NULL,
+                       packageResults = F,
+                       minCellCount= 5,
+                       createShiny = T,
+                       createJournalDocument = F,
+                       analysisIdDocument = 1,
+                       verbosity = "INFO",
+                       cdmVersion = 5,
+                       cohortVariableSetting)
   }
   
   invisible(NULL)

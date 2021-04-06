@@ -1,22 +1,37 @@
 {
   "ConceptSets": [
     {
-      "id": 0,
-      "name": "UTI",
+      "id": 3,
+      "name": "Glycopeptide",
       "expression": {
         "items": [
           {
             "concept": {
-              "CONCEPT_ID": 81902,
-              "CONCEPT_NAME": "Urinary tract infectious disease",
+              "CONCEPT_ID": 1707687,
+              "CONCEPT_NAME": "vancomycin",
               "STANDARD_CONCEPT": "S",
               "STANDARD_CONCEPT_CAPTION": "Standard",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
-              "CONCEPT_CODE": "68566005",
-              "DOMAIN_ID": "Condition",
-              "VOCABULARY_ID": "SNOMED",
-              "CONCEPT_CLASS_ID": "Clinical Finding"
+              "CONCEPT_CODE": "11124",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
+            },
+            "includeDescendants": true
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 19078399,
+              "CONCEPT_NAME": "teicoplanin",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "57021",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm",
+              "CONCEPT_CLASS_ID": "Ingredient"
             },
             "includeDescendants": true
           }
@@ -27,19 +42,8 @@
   "PrimaryCriteria": {
     "CriteriaList": [
       {
-        "ConditionOccurrence": {
-          "CodesetId": 0,
-          "VisitType": [
-            {
-              "CONCEPT_CODE": "OP",
-              "CONCEPT_ID": 9202,
-              "CONCEPT_NAME": "Outpatient Visit",
-              "DOMAIN_ID": "Visit",
-              "INVALID_REASON_CAPTION": "Unknown",
-              "STANDARD_CONCEPT_CAPTION": "Unknown",
-              "VOCABULARY_ID": "Visit"
-            }
-            ]
+        "DrugExposure": {
+          "CodesetId": 3
         }
       }
       ],
@@ -60,7 +64,7 @@
   "InclusionRules": [],
   "EndStrategy": {
     "DateOffset": {
-      "DateField": "EndDate",
+      "DateField": "StartDate",
       "Offset": 0
     }
   },
