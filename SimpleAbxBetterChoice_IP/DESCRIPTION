@@ -1,0 +1,46 @@
+Package: SimpleAbxBetterChoice
+Title: Prediction model for antibiotics susceptibility
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Chungsoo",
+           family = "Kim",
+           role = c("aut", "cre"),
+           email = "ted9219@gmail.com",
+           comment = c(ORCID = "0000-0003-1802-1777"))
+Description: Development and validation of prediction model for antibiotics susceptibility.
+Depends:
+    DatabaseConnector,
+Imports:
+  SqlRender,
+  Cyclops,
+  FeatureExtraction,
+  PatientLevelPrediction,
+  ggplot2,
+  Andromeda,
+  ff,
+  ffbase,
+  OhdsiSharing,
+  zip,
+	ParallelLogger,
+	magrittr,
+	dplyr,
+	officer,
+	gridExtra,
+	rvg,
+	jsonlite,
+	shiny,
+	shinycssloaders,
+  shinydashboard,
+  R.utils
+Suggests:
+    knitr,
+    rmarkdown,
+    DT,
+    reshape2,
+    tools,
+    plotly,
+    Hydra
+License: ABMI
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1

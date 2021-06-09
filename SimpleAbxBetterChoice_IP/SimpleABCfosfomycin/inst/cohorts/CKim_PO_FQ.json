@@ -1,0 +1,343 @@
+{
+  "ExpressionLimit": {"Type": "All"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40057469,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "374619",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "moxifloxacin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36813395,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP4827429",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "moxifloxacin Oral Solution",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 43192080,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP467415",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "moxifloxacin Delayed Release Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40001160,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "372588",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "levofloxacin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 43206354,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP497341",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "Levofloxacin Delayed Release Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 35137577,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP4794750",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "Levofloxacin Disintegrating Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 35156353,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP4813364",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "Levofloxacin Oral Granules",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40001159,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "477392",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "levofloxacin Oral Solution",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40059632,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "402430",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "gemifloxacin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40028726,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "371525",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "ciprofloxacin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40127787,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "597445",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "ciprofloxacin Extended Release Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 42959714,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP4686221",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "balofloxacin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40059609,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "374621",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "gatifloxacin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40059632,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "402430",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "gemifloxacin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40059319,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "372628",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "lomefloxacin Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 42962234,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP4688724",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "tosufloxacin tosylate Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 42960711,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP4687210",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "zabofloxacin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "[CSKIM] PO FQ",
+    "id": 1
+  }],
+  "EndStrategy": {"DateOffset": {
+    "DateField": "StartDate",
+    "Offset": 0
+  }},
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"DrugExposure": {
+      "OccurrenceEndDate": null,
+      "CorrelatedCriteria": null,
+      "DrugSourceConcept": null,
+      "CodesetId": 1,
+      "DrugTypeExclude": false,
+      "Quantity": null,
+      "DrugType": null,
+      "ProviderSpecialty": null,
+      "EffectiveDrugDose": null,
+      "Gender": null,
+      "DaysSupply": null,
+      "DoseUnit": null,
+      "VisitType": null,
+      "Refills": null,
+      "First": null,
+      "OccurrenceStartDate": null,
+      "RouteConcept": null,
+      "StopReason": null,
+      "LotNumber": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "All"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

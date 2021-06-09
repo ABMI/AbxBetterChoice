@@ -1,0 +1,547 @@
+{
+  "ExpressionLimit": {"Type": "All"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40063084,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "372979",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "nafcillin Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40063087,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "372981",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "nafcillin Oral Suspension",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40063088,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "372982",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "nafcillin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40058964,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "374626",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "linezolid Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 43173178,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP493696",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "linezolid Delayed Release Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 43205986,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP493700",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "linezolid Granules for Oral Suspension",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 36887562,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP1005781",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "linezolid Oral Granules",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 44081525,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP1076156",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "linezolid Oral Powder",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40058963,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "375140",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "linezolid Oral Suspension",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 43290853,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP555010",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "linezolid Powder for Oral Solution",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40032939,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "371966",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "doxycycline Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40032671,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "371965",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "doxycycline Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40125871,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "578681",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "doxycycline Extended Release Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40096062,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "370980",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "bacampicillin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40105046,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "562250",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "amoxicillin / clavulanate Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40131077,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "617301",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "amoxicillin / clavulanate Oral Suspension",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40009472,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "370578",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "amoxicillin Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40009223,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "370881",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "amoxicillin / sulbactam Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40145354,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "756429",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "amoxicillin Oral Solution",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40028490,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "371665",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "cycloserine Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40065416,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "372933",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "minocycline Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40067399,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "373208",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "oxytetracycline Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40087792,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "374061",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "tetracycline Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40030606,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "371555",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "clindamycin Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40023494,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "371376",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "chloramphenicol Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40102223,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "393333",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "telithromycin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40079872,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "373783",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "rifampin Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40062624,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "372897",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "metronidazole Oral Tablet",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40102982,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "498905",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "nitrofurantoin Oral Capsule",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Drug Form",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "[CSKIM] PO other antibiotics",
+    "id": 1
+  }],
+  "EndStrategy": {"DateOffset": {
+    "DateField": "StartDate",
+    "Offset": 0
+  }},
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"DrugExposure": {
+      "OccurrenceEndDate": null,
+      "CorrelatedCriteria": null,
+      "DrugSourceConcept": null,
+      "CodesetId": 1,
+      "DrugTypeExclude": false,
+      "Quantity": null,
+      "DrugType": null,
+      "ProviderSpecialty": null,
+      "EffectiveDrugDose": null,
+      "Gender": null,
+      "DaysSupply": null,
+      "DoseUnit": null,
+      "VisitType": null,
+      "Refills": null,
+      "First": null,
+      "OccurrenceStartDate": null,
+      "RouteConcept": null,
+      "StopReason": null,
+      "LotNumber": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "All"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}
