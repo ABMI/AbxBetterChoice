@@ -89,7 +89,7 @@ in packaged results.}
 Execute the Study
 }
 \details{
-This function executes the AbxBetterChoice Study.
+This function executes the SimpleAbxBetterChoice Study.
 }
 \examples{
 \dontrun{

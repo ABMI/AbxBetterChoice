@@ -25,7 +25,8 @@ execute(
   analysisIdDocument = 1,
   verbosity = "INFO",
   cdmVersion = 5,
-  cohortVariableSetting = NULL
+  cohortVariableSetting = NULL,
+  calculatedVariableSetting = NULL
 )
 }
 \arguments{

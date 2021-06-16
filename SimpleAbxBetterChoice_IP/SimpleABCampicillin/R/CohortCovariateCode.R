@@ -26,7 +26,6 @@
 #' @param cdmVersion  version of the OMOP CDM data
 #' @param cohortTable  the table name that contains the target population cohort
 #' @param rowIdField  string representing the unique identifier in the target population cohort
-#' @param aggregated  whether the covariate should be aggregated
 #' @param cohortId  cohort id for the target population cohort
 #' @param covariateSettings  settings for the covariate cohorts and time periods
 #'

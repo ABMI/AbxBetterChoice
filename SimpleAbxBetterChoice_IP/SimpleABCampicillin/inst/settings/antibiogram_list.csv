@@ -1,0 +1,8 @@
+conceptId1,conceptName1,conceptId2,conceptName2,startDay,endDay
+4011683,Ecoli,3010007,Ciprofloxacin,-365,0
+4011683,Ecoli,3016774,Ampicillin,-365,0
+4011683,Ecoli,3034442,Ceftriaxone,-365,0
+4011683,Ecoli,3000769,Gentamicin,-365,0
+4011683,Ecoli,3035551,Levofloxacin,-365,0
+4011683,Ecoli,3037501,Nitrofurantoin,-365,0
+4011683,Ecoli,3000127,Tetracycline,-365,0

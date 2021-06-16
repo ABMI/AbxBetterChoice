@@ -108,7 +108,8 @@ execute <- function(connectionDetails,
                     analysisIdDocument = 1,
                     verbosity = "INFO",
                     cdmVersion = 5,
-                    cohortVariableSetting = NULL) {
+                    cohortVariableSetting = NULL, 
+                    calculatedVariableSetting = NULL) {
   if (!file.exists(outputFolder))
     dir.create(outputFolder, recursive = TRUE)
   
@@ -177,25 +178,25 @@ execute <- function(connectionDetails,
       ParallelLogger::logInfo("Adding calculated covariates to analysis settings")
       
       pathToCustom <- system.file("settings", paste0(calculatedVariableSetting, ".csv"), package = "SimpleABCampicillin")
-      cohortVarsToCreate <- utils::read.csv(pathToCustom)
-      cohortCov <- list()
-      length(cohortCov) <- nrow(cohortVarsToCreate)+1
-      cohortCov[[1]] <- FeatureExtraction::createCovariateSettings(useDemographicsAgeGroup = T)
-      
-      for(i in 1:nrow(cohortVarsToCreate)){
-        cohortCov[[1+i]] <- SimpleABCampicillin::createCohortCovariateSettings(covariateName = as.character(cohortVarsToCreate$cohortName[i]),
-                                                                               covariateId = as.numeric(paste0(cohortVarsToCreate$cohortId[i], abs(cohortVarsToCreate$startDay[i]), abs(cohortVarsToCreate$endDay[i]), 456)), 
-                                                                               count = F,
+      calculatedVarsToCreate <- utils::read.csv(pathToCustom)
+      calCov <- list()
+      length(calCov) <- nrow(calculatedVarsToCreate)
+
+      for(i in 1:nrow(calculatedVarsToCreate)){
+        calCov[[i]] <- SimpleABCampicillin::createCalculatedCovariateSettings(covariateName = as.character(paste0(calculatedVarsToCreate$conceptName1[i], calculatedVarsToCreate$conceptName2[i])),
+                                                                               covariateId = as.numeric(paste0(calculatedVarsToCreate$conceptId1[i], calculatedVarsToCreate$conceptId2[i], 789)), 
                                                                                cohortDatabaseSchema = cohortDatabaseSchema,
                                                                                cohortTable = cohortTable,
-                                                                               cohortId = cohortVarsToCreate$atlasId[i],
-                                                                               startDay=cohortVarsToCreate$startDay[i], 
-                                                                               endDay=cohortVarsToCreate$endDay[i])
+                                                                               cohortId = predictionAnalysisList$cohortIds,
+                                                                               startDay=calculatedVarsToCreate$startDay[i], 
+                                                                               endDay=calculatedVarsToCreate$endDay[i],
+                                                                               calculatedData = "antibiogram")
       }
       
       for(i in 1:length(predictionAnalysisList$modelAnalysisList$covariateSettings)){
-        cohortCov[[1]] <- predictionAnalysisList$modelAnalysisList$covariateSettings[[i]]
-        predictionAnalysisList$modelAnalysisList$covariateSettings[[i]] <- cohortCov
+        for(j in 1: length(calCov)){
+          predictionAnalysisList$modelAnalysisList$covariateSettings$`1`[[length(predictionAnalysisList$modelAnalysisList$covariateSettings$`1`) + 1]] <- calCov[[j]]  
+        }
       }
     }
     
